@@ -1,0 +1,11 @@
+
+
+Modified: 
+   AppController 
+   AppEngineController
+   talkingBirdController
+   web.php   
+   matchmaker
+   mismatch.blade
+Database: 
+   gossips: new column( details - text --nullable)

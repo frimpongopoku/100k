@@ -1,0 +1,7 @@
+{
+  "editor.fontFamily": "Monaco,monospace, 'Droid Sans Fallback'",
+  "prettier.stylelintIntegration": true,
+  "prettier.tabWidth": 2,
+  "editor.tabSize": 2,
+  "editor.fontSize": 20
+}
