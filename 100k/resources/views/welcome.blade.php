@@ -1,20 +1,20 @@
 @extends('layouts.welcome-nav') 
 
 @section('content')
-  <div style="padding-top:60px;">
+  <div style="padding-top:60px;" class="vanish" id="main-div">
     <div class="m-header"> 
       <div class="row">
       <div class="col-md-6 col-lg-6" style="padding:0px"> 
-        <div class="brand-div" style="padding-top:16%"> 
+        <div class="brand-div vanish" style="padding-top:16%;position:relative; left:-120px"> 
           <center>
-            <h1 class="hero-title" >100K<span style="color:orange">Challenge</span></h1>
-            <button class="plant-btn btn btn-default round-me">Plant A Tree </button><br/>
-            <img src = "{{asset('default-imgs/100k-footer.png')}}" style="height:60px; width:60px; margin-top:30px;" />
+            <h1 class="hero-title" >100k<span style="color:orange">Challenge</span></h1>
+            <button class="plant-btn btn btn-default round-me z-depth-1">Plant A Tree </button><br/>
+            <img src = "{{asset('default-imgs/100k-footer.png')}}" style="height:100px; width:100px; margin-top:30px;" />
           </center>
         </div>
       </div>
       <div class="col-md-6 col-lg-6" style="padding:0px"> 
-        <div class="tree-group"> 
+        <div class="tree-group vanish"> 
           <img src="{{asset('default-imgs/Tree1.png')}}"  class="tree tree-1" />
           <img src="{{asset('default-imgs/Tree1.png')}}"  class="tree tree-6" />
           <img src="{{asset('default-imgs/Tree1.png')}}"  class="tree tree-2" />
@@ -26,48 +26,66 @@
     </div>
     </div>
     <div class="sponsorship">
+      
       <div class="row">
           <div class="col-md-4">
             <img src={{asset('default-imgs/dentons.png')}} class="dentons-logo"/>
           </div>
+          
           <div class="col-md-4">
             <h3 style="margin-top:60px; color:#8d969e;">ANOTHER COMPANY </h3>
           </div>
+          {{-- about us anchor --}}
+          <div id="about-anchor"></div>
+          {{-- ----------------- --}}
           <div class="col-md-4">
             <h3 style="margin-top:60px; color:#8d969e;">ANOTHER COMPANY </h3>
           </div>
         </div>
+        
     </div>
-    <div class="about"> 
-      <h1 style="text-align: center; color:#929090; margin-top:20px;">About 100KLegacyChallenge</h1>
-      <p class="about-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem consequuntur excepturi possimus rem qui esse minus dolor, animi vel, soluta error, veniam tempora! Consectetur molestiae at, voluptates asperiores est doloremque?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolores soluta debitis optio ut qui sequi excepturi facere ipsum facilis distinctio repellat esse maiores aliquid amet voluptatibus cum, minus dolore.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas debitis quis aut omnis nemo quasi ut et, exercitationem error, cum numquam, similique illo distinctio amet hic totam soluta odit suscipit?
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim consectetur vitae ipsam eum consequatur obcaecati ducimus facere porro amet quod. Unde voluptas cum officiis dolor aut dolore illo earum id.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet ad necessitatibus laudantium. Vitae perspiciatis et at facere explicabo ducimus inventore fuga, quia veniam quo dolore praesentium consequuntur numquam molestias corporis.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fuga eius dolorum debitis placeat at, modi aliquid minima maxime cum dolores vel magni, eaque, iure natus consectetur commodi. Provident, saepe.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate hic assumenda facere repellendus dolores quam culpa ullam ipsum reprehenderit cum ipsam numquam, architecto placeat, commodi necessitatibus libero iure quia illo?
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis aliquid, alias consequatur, iure ea totam cupiditate earum consectetur ducimus velit, a iste quas ullam nisi. Sit quod molestiae distinctio quam!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolores soluta debitis optio ut qui sequi excepturi facere ipsum facilis distinctio repellat esse maiores aliquid amet voluptatibus cum, minus dolore.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas debitis quis aut omnis nemo quasi ut et, exercitationem error, cum numquam, similique illo distinctio amet hic totam soluta odit suscipit?
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim consectetur vitae ipsam eum consequatur obcaecati ducimus facere porro amet quod. Unde voluptas cum officiis dolor aut dolore illo earum id.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet ad necessitatibus laudantium. Vitae perspiciatis et at facere explicabo ducimus inventore fuga, quia veniam quo dolore praesentium consequuntur numquam molestias corporis.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fuga eius dolorum debitis placeat at, modi aliquid minima maxime cum dolores vel magni, eaque, iure natus consectetur commodi. Provident, saepe.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate hic assumenda facere repellendus dolores quam culpa ullam ipsum reprehenderit cum ipsam numquam, architecto placeat, commodi necessitatibus libero iure quia illo?
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis aliquid, alias consequatur, iure ea totam cupiditate earum consectetur ducimus velit, a iste quas ullam nisi. Sit quod molestiae distinctio quam!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolores soluta debitis optio ut qui sequi excepturi facere ipsum facilis distinctio repellat esse maiores aliquid amet voluptatibus cum, minus dolore.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas debitis quis aut omnis nemo quasi ut et, exercitationem error, cum numquam, similique illo distinctio amet hic totam soluta odit suscipit?
-
+    <div class="about" > 
+      <h1 style="text-align: center; color:#929090; margin-top:20px;">About 100kChallenge</h1>
+      <p class="about-text"> The 100K Legacy Challenge is a moonshot sustainability challenge created to foster synergy
+between the Mauritian Government, the private sector, the general public and the expat
+community in Mauritius, to collectively make history by planting 100,000 trees within 6 hours .<br/><br/>
+The challenge is a creation by a group of students from the African Leadership University and is
+    inspired by the Forest Landscape Restoration initiative (FLR) that has been taken up on a global
+    scale. FLR has proven to be the quickest, easiest and cheapest way to mitigating climate change
+    and integrating multiple climatic objectives including those aligned with reducing emissions from
+    deforestation, facilitating sustainable rural development and unlocking climate-smart private sector
+    investments.<br/><br/>
+    Through this challenge, we hope to promote and inspire a “green-conscious” culture within the
+    country, and to qualify Mauritius to officially participate in the AFR100 (African Forest Landscape
+    Restoration) Initiative and the Bonn Challenge . The AFR100 is a country-led effort to bring 100
+    million hectares of land in Africa into restoration by 2030. The Bonn Challenge is a global effort to
+    restore 150 million hectares of the world's degraded and deforested lands by 2020, and 350 million
+    hectares by 2030.<br/><br/>
+   
+    Pursuant to the 17th goal in the UN Sustainable Development Goals - to s trengthen the means of
+    implementation and revitalize the global partnership for sustainable development , the 100k
+    Challenge team is partnering with various Ministries and departments within the Government of
+    Mauritius, as well as with Corporates, Universities, tree nurseries, local youth groups and the
+    general public. Making this commitment will not only contribute to achieving ecological restoration
+    on the island, it will also signal exemplary leadership on regaining ecological integrity.<br/><br/>
+    Both Ethiopia and India have in the past broken world records by each planting 353 and 66 million
+    trees in 12 hours , respectively. <span id="scanner"></span>We need YOU to join us so we can achieve the 100,000 trees within
+    6 hours goal, for Mauritius. You can get in touch with us using the contact information below to find
+    out how we plan to achieve this seemingly impossible but very achievable goal, with your help.
+    #alemoris!
+    
       </p>
+      
     </div>
-    {{--  --}}
-    <div class="banner-area">
+    {{--  SCANNER AREA--}}
+    <div class="banner-area" >
       <div class="banner">
         <h1 class="banner-text">SCAN YOUR TREE HERE </h1>
       </div>
       <div class="scanner-container">
         <div class="col-md-6 col-lg-6 offset-md-3" style="padding-top:30px;">
-            <div class="my-card z-depth-1">
+        
+            <div class="my-card z-depth-1 popout">
               {{-- <video id="code-preview"></video>  --}}
               <center>
                 <img src="{{asset('default-imgs/Qr-3.png')}}" class="dummy-code"/><br/>
@@ -79,11 +97,14 @@
                 @endguest
                 
               </center>
+              <div id="map-anchor"></div>
             </div>
         </div>
+       
       </div> 
     </div>
     {{--  ----------MAPS AREA --------------- --}}
+    
     <div class="maps-area" style="background:lightgray;height:730px;"> 
       <div class="banner">
         <h1 class="banner-text">FIND YOUR TREES ON THE MAP </h1>

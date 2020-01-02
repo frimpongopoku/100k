@@ -11,6 +11,7 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/extra/anime.js') }}" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -22,6 +23,8 @@
     <link href="https://fonts.googleapis.com/css?family=Google+Sans:200,300,400,500,700,800,900" rel="stylesheet">
 
 </head>
+
+
 <body>
     <div id="app">
         {{-- <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
@@ -79,5 +82,6 @@
             @yield('content')
         </main>
     </div>
+  
 </body>
 </html>
