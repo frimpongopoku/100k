@@ -1,0 +1,151 @@
+
+
+
+.subscribe-button{
+  background:#362336; 
+  color:white;
+
+}
+
+.zero-radius{
+  border-radius:0px;
+}
+.footer{
+  background:#1E002E;
+  height:300px; 
+  width:100%;
+  padding:30px;
+}
+.btn-finish{
+  width:150px
+}
+.dummy-code{
+  margin-top:30px;
+  height:200px; 
+  width:200px; 
+}
+
+.my-card{
+  background:white; 
+  border-radius:6px;
+  height:40vh;
+  width:100%; 
+
+}
+.scanner-container{
+  background:#9289db; 
+  height:50vh; 
+  width:100%;
+}
+.banner-text{
+  color:white;
+  text-align: center;
+}
+.banner{
+  background:#3A166A; 
+  padding:40px;
+  width:100%;
+}
+.about-text{
+  color:#a09e9e;
+  padding:20px 180px 20px 180px;
+  text-align: justify;
+
+}
+.dentons-logo{
+  height:140px; 
+  width:230px;
+}
+
+.sponsorship{
+  opacity:.4;
+  padding:30px; 
+  width:100%; 
+  background:#ebe8e8;
+}
+
+.m-header{
+  width:100%; 
+  height:57vh; 
+  background:#fefbf4; 
+  margin-top:8px;
+}
+
+.brand-div{
+  background:#3A166A;
+  height:57vh; 
+  width:100%;
+}
+
+.tree{
+  height:250px; 
+  width:300px;
+  position:absolute;
+}
+.tree-1{
+  top:10px;
+}
+.tree-2{
+  bottom:10px;
+  left:210px;
+  z-index:10;
+}
+.tree-3{
+  top:120px;
+  right:40px;
+}
+.tree-4{
+  left:-90px;
+  bottom:0px;
+}
+.tree-5{
+  left:80px;
+  bottom:-70px;
+  z-index:11;
+}
+.tree-6{
+  right:170px;
+  top:10px;
+  
+}
+.tree-group{
+  
+}
+
+
+.z-depth-1-half{
+  box-shadow:0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15);
+}
+.z-depth-1{
+  -webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
+  box-shadow:0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12)
+}
+.z-depth-2{
+  -webkit-box-shadow:0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
+  box-shadow:0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)
+}
+.z-depth-3{
+  -webkit-box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+  box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19)}
+.z-depth-4{
+  -webkit-box-shadow:0 16px 28px 0 rgba(0,0,0,.22),0 25px 55px 0 rgba(0,0,0,.21);
+  box-shadow:0 16px 28px 0 rgba(0,0,0,.22),0 25px 55px 0 rgba(0,0,0,.21)}
+.z-depth-5{
+  -webkit-box-shadow:0 27px 24px 0 rgba(0,0,0,.2),0 40px 77px 0 rgba(0,0,0,.22);
+  box-shadow:0 27px 24px 0 rgba(0,0,0,.2),0 40px 77px 0 rgba(0,0,0,.22)}
+  
+.my-depth-1 { 
+  box-shadow: 0px 1px 2px gray;
+}
+.my-depth-half { 
+  box-shadow: 0px 1px 1px gray;
+}
+.my-depth-half-b { 
+  box-shadow: 0px 1px 1px black;
+}
+.my-depth-2 { 
+  box-shadow: 0px 3px 3px gray;
+}
+.my-depth-4 { 
+  box-shadow: 0px 4px 4px gray;
+}
