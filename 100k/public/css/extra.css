@@ -1,6 +1,34 @@
 
 
-
+.social-area{
+  margin-top:120px; 
+  margin-left:-130px;
+}
+.m-social{
+  font-size:13px;
+}
+.round-me{
+  border-radius:55px;
+}
+.auth-btn2{
+  border-width:0px;
+  padding:9px 34px; 
+  background:green;
+}
+.auth-btn{
+  border-width:0px;
+  padding:9px 34px; 
+  background:#420b42;
+}
+.login-body-tweaks{
+  padding:50px 20px;
+  border-radius:6px
+}
+.stick-to-top{
+  position:fixed; 
+  width:100%;
+  z-index:50;
+}
 .subscribe-button{
   background:#362336; 
   color:white;
@@ -17,7 +45,7 @@
   padding:30px;
 }
 .btn-finish{
-  width:150px
+  width:220px
 }
 .dummy-code{
   margin-top:30px;

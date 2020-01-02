@@ -1,7 +1,7 @@
 @extends('layouts.welcome-nav') 
 
 @section('content')
-  <div >
+  <div style="padding-top:60px;">
     <div class="m-header"> 
       <div class="row">
       <div class="col-md-6 col-lg-6" style="padding:0px"> 
@@ -56,6 +56,7 @@
 
       </p>
     </div>
+    {{--  --}}
     <div class="banner-area">
       <div class="banner">
         <h1 class="banner-text">SCAN YOUR TREE HERE </h1>
@@ -65,7 +66,13 @@
             <div class="my-card z-depth-1"> 
               <center>
                 <img src="{{asset('default-imgs/Qr-3.png')}}" class="dummy-code"/><br/>
-                <button class="btn btn-danger btn-finish">Scan </button>
+                @guest
+                  <a class="btn btn-danger zero-radius btn-finish" href="http://localhost:8000/login/google">Login With <i class="fa fa-google"></i>oogle To Scan</a>
+                  <a style="width:260px;" class="btn btn-default subscribe-button zero-radius btn-finish" href="http://localhost:8000/login">Login With A 100k Account To Scan</a>
+                @else  
+                  <button class="btn btn-danger btn-finish" onclick="alert('scanning now .....')">Scan </button>
+                @endguest
+                
               </center>
             </div>
         </div>
@@ -83,7 +90,18 @@
     <div class="footer"> 
       <div class="row"> 
           <div class="col-lg-6 col-md-6"> 
-            <img src="{{asset('default-imgs/100k-footer.png')}}" style="display:inline-block;height:130px; margin-top:60px" />
+            <div class="row">
+                <div class="col-lg-6">  
+                  <img src="{{asset('default-imgs/100k-footer.png')}}" style="display:inline-block;height:130px; margin-top:60px" />
+                </div>
+                <div class="col-lg-6 social-area">
+                  <button class="btn btn-default round-me m-social" style="background:blue; color:white;"><i class="fa fa-facebook"></i></button>
+                  <button class="btn btn-default round-me m-social" style="background:white"><i class="fa fa-instagram"></i></button>
+                  <button class="btn btn-default round-me m-social" style="background:#00a1ff; color:white;"><i class="fa fa-twitter"></i></button>
+                  <p style="margin-top:5px; color:lightgray">Follow Us On Social Media </p>
+                </div>
+              
+            </div>
           </div>
           <div class="col-md-6 col-g-6" style="padding-top:70px;"> 
             <center>
