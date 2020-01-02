@@ -5,8 +5,12 @@
     <div class="m-header"> 
       <div class="row">
       <div class="col-md-6 col-lg-6" style="padding:0px"> 
-        <div class="brand-div"> 
-        
+        <div class="brand-div" style="padding-top:16%"> 
+          <center>
+            <h1 class="hero-title" >100K<span style="color:orange">Challenge</span></h1>
+            <button class="plant-btn btn btn-default round-me">Plant A Tree </button><br/>
+            <img src = "{{asset('default-imgs/100k-footer.png')}}" style="height:60px; width:60px; margin-top:30px;" />
+          </center>
         </div>
       </div>
       <div class="col-md-6 col-lg-6" style="padding:0px"> 
@@ -63,14 +67,15 @@
       </div>
       <div class="scanner-container">
         <div class="col-md-6 col-lg-6 offset-md-3" style="padding-top:30px;">
-            <div class="my-card z-depth-1"> 
+            <div class="my-card z-depth-1">
+              {{-- <video id="code-preview"></video>  --}}
               <center>
                 <img src="{{asset('default-imgs/Qr-3.png')}}" class="dummy-code"/><br/>
                 @guest
                   <a class="btn btn-danger zero-radius btn-finish" href="http://localhost:8000/login/google">Login With <i class="fa fa-google"></i>oogle To Scan</a>
                   <a style="width:260px;" class="btn btn-default subscribe-button zero-radius btn-finish" href="http://localhost:8000/login">Login With A 100k Account To Scan</a>
                 @else  
-                  <button class="btn btn-danger btn-finish" onclick="alert('scanning now .....')">Scan </button>
+                  <button class="btn btn-danger btn-finish" onclick="alert('Will Be implemented Soon .....!')">Scan </button>
                 @endguest
                 
               </center>
@@ -79,11 +84,13 @@
       </div> 
     </div>
     {{--  ----------MAPS AREA --------------- --}}
-    <div class="maps-area"> 
+    <div class="maps-area" style="background:lightgray;height:730px;"> 
       <div class="banner">
         <h1 class="banner-text">FIND YOUR TREES ON THE MAP </h1>
       </div>
-      <img src="{{asset('default-imgs/map1.jpeg')}}" />
+    
+      <center><div id="map" class="z-depth-1" style="border-radius:10px;height:500px; width:80%;margin:40px"></div></center>
+     
     </div>
 
     {{-- ------FOOTER AREA -------- --}}
@@ -114,5 +121,20 @@
 
     </div>
   </div>
+
+@endsection
+
+@section('custom-js')
+  
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+  
 
 @endsection

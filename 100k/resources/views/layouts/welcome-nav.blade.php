@@ -12,6 +12,8 @@
     <!-- Scripts -->
    
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/extra/instascan.min.js') }}" defer></script>
+    <script src="{{ asset('js/extra/qr-controller.js') }}" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -41,6 +43,9 @@
                         <a class="nav-link" href="#">HOME</a>
                      </li>
                       <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT US</a>
+                     </li>
+                      <li class="nav-item">
                         <a class="nav-link" href="#">PLANT WITH US</a>
                      </li>
                       <li class="nav-item">
@@ -50,7 +55,7 @@
                      @if(Auth::user())
                         <li class="nav-item dropdown">
                           <a style="text-transform:uppercase" id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                              {{ Auth::user()->name }} <span class="caret"></span>
+                              <b>{{ Auth::user()->name }}</b> <span class="caret"></span>
                           </a>
 
                           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -108,5 +113,11 @@
             @yield('content')
       
     </div>
+
+    @yield('custom-js')
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKjypPjP5teg5GZz7Jg4OCg4IMXENJME4&callback=initMap"
+    async defer></script>
+
+    
 </body>
 </html>
