@@ -1,6 +1,86 @@
 @media only screen and ( max-width: 785px){
-
+  .phone-body-fix{
+    width:480px;
+  }
+  .phone-vanish{
+    display:none;
+  }
+  .tree-phone-margin{
+    margin-top:120px;
+  }
+  .phone-about-fix{
+    margin-top:315px;
+  }
+  .about-text{
+    padding: 10px 7px 10px 30px !important;
+  }
+  .phone-width{
+    width:495px;
+  }
+  .phone-scanner-height{
+    height:45vh !important;
+  }
+  .phone-scanner-cont-height{
+    height:53vh !important;
+  }
+  .phone-nav-tweak{
+    background:white; 
+    padding:20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .phone-footer{
+    height:250px; 
+    background:#1a0239; 
+ 
+  }
+  .phone-auth-title{
+    font-size:20px;
+  }
+  .login-body-tweaks{
+    padding:15px !important;
+  }
+  .phone-auth-logo{
+    height:70px;
+  }
+  .phone-auth-form{
+    padding:0px 32px;
+  }
+  .form-group{
+    margin-bottom:0px !important;
+  }
+  .auth-pages-top-fix{
+    margin-top:45px;
+  }
+  .phone-margin{
+    margin-top:15px
+  }
+  .scale-to-phone{
+    transform:scale(.9)
+  }
 }
+
+/* Exclusive pc mode */
+@media only screen and ( min-width: 785px){
+  .pc-vanish{
+    display:none;
+  }
+  /* .phone-vanish{display:block} */
+}
+
+.scale-to-phone{}
+.phone-margin{}
+.auth-pages-top-fix{}
+.phone-auth-form{}
+.phone-auth-logo{}
+.phone-auth-title{}
+.phone-footer{}
+.phone-scanner-height{}
+.phone-width{}
+.phone-body-fix{}
+
+.tree-phone-margin{}
+.phone-about-fix{}
 .popout{ cursor:pointer;}
 .popout:hover{
   transform: scale(1.08);
@@ -63,7 +143,7 @@
   border-radius:0px;
 }
 .footer{
-  background:#1E002E;
+  background:#1a0239;
   height:300px; 
   width:100%;
   padding:30px;
@@ -104,6 +184,11 @@
   padding:20px 180px 20px 180px;
   text-align: justify;
 
+
+}
+.about-text:hover{
+  color:black ;
+  transition:.8s ease-in-out;
 }
 .dentons-logo{
   height:140px; 
@@ -111,17 +196,22 @@
 }
 
 .sponsorship{
-  opacity:.4;
+  opacity:.2;
   padding:30px; 
   width:100%; 
   background:#ebe8e8;
 }
 
+.invisible{
+  opacity: 0;
+}
 .m-header{
   width:100%; 
   height:57vh; 
   background:#ffd390; 
   margin-top:8px;
+  animation:colorSwitch 9s infinite;
+  -webkit-animation: colorSwitch  7s infinite;
 }
 
 .brand-div{
@@ -160,6 +250,21 @@
 }
 .tree-6{
   right:170px;
+  top:10px;
+  
+}
+.tree-7{
+  right:10px;
+  bottom:80px;
+  
+}
+.tree-8{
+  right:170px;
+  bottom:30px;
+  
+}
+.tree-9{
+  right:60px;
   top:10px;
   
 }
@@ -203,4 +308,39 @@
 }
 .my-depth-4 { 
   box-shadow: 0px 4px 4px gray;
+}
+
+@-webkit-keyframes colorSwitch{
+  0%{
+    background:#ffd390
+  }
+  20%{
+    background:#a3f27a;
+  }
+  50%{
+    background:#282828;
+  }
+  70%{
+    background:#c5f7ff;
+  }
+  100%{
+    background:white;
+  }
+}
+@keyframes colorSwitch{
+  0%{
+    background:#ffd390
+  }
+  20%{
+    background:#a3f27a;
+  }
+  50%{
+    background:#282828;
+  }
+  70%{
+    background:#c5f7ff;
+  }
+  100%{
+    background:white;
+  }
 }

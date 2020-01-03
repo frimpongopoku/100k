@@ -4,11 +4,11 @@
 <div class="container vanish register">
     <div class="row justify-content-center">
         <div class="col-md-8" style="padding-top:13%; color:#a69cab;">
-          <center><h3>Create A 100k Account </h3></center><br/>
+          <center><h3 class="phone-auth-title auth-pages-top-fix">Create A 100k Account </h3></center><br/>
             <div class="card register-card vanish" style="border-width:0px; transform:scale(.8)">
                 <div class="card-body login-body-tweaks z-depth-1">
-                  <center><img  style="cursor:pointer" src="{{asset('default-imgs/100k-ico.png')}}" onclick="window.location ='/'"/></center>
-                    <form method="POST" action="{{ route('register') }}">
+                  <center><img  class="phone-auth-logo" style="cursor:pointer" src="{{asset('default-imgs/100k-ico.png')}}" onclick="window.location ='/'"/></center>
+                    <form method="POST" action="{{ route('register') }}" class=" scale-to-phone">
                         @csrf
 
                         <div class="form-group row">
@@ -62,7 +62,7 @@
                         </div>
 
                         <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
+                            <div class="col-md-6 offset-md-4 phone-margin">
                                 <button type="submit" class="btn btn-primary auth-btn">
                                     {{ __('Register') }}
                                 </button>

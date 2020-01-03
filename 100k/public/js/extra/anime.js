@@ -29,7 +29,7 @@ $(document).ready(() => {
         setTimeout(() => {
             var treegroup = $(".tree-group");
             treegroup.animate({ opacity: 1 }, 700);
-            for (let index = 0; index < 5; index++) {
+            for (let index = 0; index < 8; index++) {
                 var name = ".tree-" + (index + 1);
                 var tree = $(name);
                 tree.animate({ opacity: 1, width: 300 }, 900 + index * 500);

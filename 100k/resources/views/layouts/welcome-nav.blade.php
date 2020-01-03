@@ -17,6 +17,9 @@
     <script src="{{ asset('js/extra/anime.js') }}" defer></script>
 
     <!-- Fonts -->
+
+    <link rel='icon' href="{{asset('default-imgs/100k-footer.png')}}"/>
+    {{-- <link rel="fav-ico" href="{{asset('default-imgs/100k-icon.png')}}"> --}}
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Google+Sans:200,300,400,500,700,800,900" rel="stylesheet">
@@ -27,7 +30,7 @@
     <link href="{{ asset('css/extra.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
+    <div id="app" class="phone-body-fix">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm stick-to-top" style="height:70px;">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -39,12 +42,15 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav ml-auto phone-nav-tweak">
                       <li class="nav-item">
                         <a class="nav-link" href="/">HOME</a>
                      </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#about-anchor">ABOUT US</a>
+                     </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#sponsor-anchor">SPONSORS</a>
                      </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#scanner">PLANT WITH US</a>

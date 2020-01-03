@@ -8,43 +8,46 @@
         <div class="brand-div vanish" style="padding-top:16%;position:relative; left:-120px"> 
           <center>
             <h1 class="hero-title" >100k<span style="color:orange">Challenge</span></h1>
-            <button class="plant-btn btn btn-default round-me z-depth-1">Plant A Tree </button><br/>
+            <button class="plant-btn btn btn-default round-me z-depth-1" onclick="window.location='#scanner'">Plant A Tree </button><br/>
             <img src = "{{asset('default-imgs/100k-footer.png')}}" style="height:100px; width:100px; margin-top:30px;" />
           </center>
         </div>
       </div>
       <div class="col-md-6 col-lg-6" style="padding:0px"> 
-        <div class="tree-group vanish"> 
+        <div class="tree-group vanish tree-phone-margin"> 
           <img src="{{asset('default-imgs/Tree1.png')}}"  class="tree tree-1" />
-          <img src="{{asset('default-imgs/Tree1.png')}}"  class="tree tree-6" />
+          <img src="{{asset('default-imgs/Tree1.png')}}"  class="tree tree-6 phone-vanish" />
           <img src="{{asset('default-imgs/Tree1.png')}}"  class="tree tree-2" />
-          <img src="{{asset('default-imgs/Tree1.png')}}"  class="tree tree-3" />
+          <img src="{{asset('default-imgs/Tree1.png')}}"  class="tree tree-3 phone-vanish" />
           <img src="{{asset('default-imgs/Tree1.png')}}"  class="tree tree-4" />
           <img src="{{asset('default-imgs/Tree1.png')}}"  class="tree tree-5" />
+          <img src="{{asset('default-imgs/Tree1.png')}}"  class="tree tree-7" />
+          <img src="{{asset('default-imgs/Tree1.png')}}"  class="tree tree-8" />
+          <img src="{{asset('default-imgs/Tree1.png')}}"  class="tree tree-9" />
         </div>
+        
       </div>
     </div>
     </div>
-    <div class="sponsorship">
+    <div class="sponsorship phone-vanish" id="sponsor-anchor">
       
       <div class="row">
+          <div class="col-md-4 invisible">
+            <h3 style="margin-top:60px; color:#8d969e;">ANOTHER COMPANY </h3>
+          </div>
           <div class="col-md-4">
             <img src={{asset('default-imgs/dentons.png')}} class="dentons-logo"/>
-          </div>
-          
-          <div class="col-md-4">
-            <h3 style="margin-top:60px; color:#8d969e;">ANOTHER COMPANY </h3>
           </div>
           {{-- about us anchor --}}
           <div id="about-anchor"></div>
           {{-- ----------------- --}}
-          <div class="col-md-4">
+          <div class="col-md-4 invisible">
             <h3 style="margin-top:60px; color:#8d969e;">ANOTHER COMPANY </h3>
           </div>
         </div>
         
     </div>
-    <div class="about" > 
+    <div class="about phone-about-fix" > 
       <h1 style="text-align: center; color:#929090; margin-top:20px;">About 100kChallenge</h1>
       <p class="about-text"> The 100K Legacy Challenge is a moonshot sustainability challenge created to foster synergy
 between the Mauritian Government, the private sector, the general public and the expat
@@ -78,22 +81,26 @@ The challenge is a creation by a group of students from the African Leadership U
       
     </div>
     {{--  SCANNER AREA--}}
-    <div class="banner-area" >
+    <div class="banner-area phone-width" >
       <div class="banner">
         <h1 class="banner-text">SCAN YOUR TREE HERE </h1>
       </div>
-      <div class="scanner-container">
+      <div class="scanner-container phone-scanner-cont-height">
         <div class="col-md-6 col-lg-6 offset-md-3" style="padding-top:30px;">
         
-            <div class="my-card z-depth-1 popout">
+            <div class="my-card phone-scanner-height z-depth-1 popout">
               {{-- <video id="code-preview"></video>  --}}
               <center>
                 <img src="{{asset('default-imgs/Qr-3.png')}}" class="dummy-code"/><br/>
                 @guest
-                  <a class="btn btn-danger zero-radius btn-finish" href="http://localhost:8000/login/google">Login With <i class="fa fa-google"></i>oogle To Scan</a>
-                  <a style="width:260px;" class="btn btn-default subscribe-button zero-radius btn-finish" href="http://localhost:8000/login">Login With A 100k Account To Scan</a>
+                  <a class="phone-vanish btn btn-danger  my-depth-1 btn-finish round-me" href="http://localhost:8000/login/google">Login With <i class="fa fa-google"></i>oogle To Scan</a>
+                  <a style=" width:260px;" class="my-depth-1 phone-vanish btn btn-default round-me subscribe-button  btn-finish" href="http://localhost:8000/login">Login With A 100k Account To Scan</a>
+                  
+                  <small class="pc-vanish">Login With </small></br>
+                  <a class="pc-vanish btn btn-danger round-me " href="http://localhost:8000/login/google"><i class="fa fa-google"></i></a>
+                  <a style="" class="pc-vanish btn btn-default subscribe-button round-me" href="http://localhost:8000/login">100K</a>
                 @else  
-                  <button class="btn btn-danger btn-finish" onclick="alert('Will Be implemented Soon .....!')">Scan </button>
+                  <button class="btn btn-danger btn-finish round-me" onclick="alert('Will Be implemented Soon .....!')">Scan </button>
                 @endguest
                 
               </center>
@@ -105,7 +112,7 @@ The challenge is a creation by a group of students from the African Leadership U
     </div>
     {{--  ----------MAPS AREA --------------- --}}
     
-    <div class="maps-area" style="background:lightgray;height:730px;"> 
+    <div class="maps-area phone-width" style="background:lightgray;height:730px;"> 
       <div class="banner">
         <h1 class="banner-text">FIND YOUR TREES ON THE MAP </h1>
       </div>
@@ -115,7 +122,21 @@ The challenge is a creation by a group of students from the African Leadership U
     </div>
 
     {{-- ------FOOTER AREA -------- --}}
-    <div class="footer"> 
+    <div class="pc-vanish phone-footer phone-width" style="padding-top:20px;">
+      <center> 
+        <small style="color:#887d9f;font-size:115%">Receive weekly updates from us!</small>
+        <input style="margin:10px; width:81%;display:inline-block; border-radius:0px; padding:20px;"type="email" placeholder="email" name="email" class="form-control" /> 
+        <button class="btn btn-default btn-finish subscribe-button zero-radius">Subscribe</button><br/>
+        <div class="col-lg-6" style="margin-top:23px">
+          <button class="btn btn-default round-me m-social" style="background:blue; color:white;"><i class="fa fa-facebook"></i></button>
+          <button class="btn btn-default round-me m-social" style="background:white"><i class="fa fa-instagram"></i></button>
+          <button class="btn btn-default round-me m-social" style="background:#00a1ff; color:white;"><i class="fa fa-twitter"></i></button>
+          <p style="margin-top:5px; color:lightgray">Follow Us On Social Media </p>
+        </div>
+        
+      </center>
+    </div>
+    <div class="footer phone-vanish"> 
       <div class="row"> 
           <div class="col-lg-6 col-md-6"> 
             <div class="row">
@@ -134,8 +155,8 @@ The challenge is a creation by a group of students from the African Leadership U
           <div class="col-md-6 col-g-6" style="padding-top:70px;"> 
             <center>
               <p style="color:#887d9f">Receive weekly updates from us!</p>
-              <input style="margin:10px; border-radius:0px; padding:20px;"type="email" placeholder="email" name="email" class="form-control" /> 
-              <button class="btn btn-default btn-finish subscribe-button zero-radius">Subscribe</button>
+              <input style="margin:10px;  padding:20px;"type="email" placeholder="email" name="email" class="form-control round-me" /> 
+              <button class="btn btn-default btn-finish subscribe-button z round-me">Subscribe</button>
             <center>
           </div>
       </div>

@@ -4,11 +4,11 @@
 <div class="container vanish login">
     <div class="row justify-content-center">
         <div class="col-md-8" style="padding-top:13%; color:#a69cab;">
-          <center><h3>Login In With A 100k Account </h3></center><br/>
+          <center><h3 class="phone-auth-title auth-pages-top-fix">Login In With A 100k Account </h3></center><br/>
             <div class="card vanish login-card" style="border-width:0px;transform: scale(.7)" >
                 <div class="card-body login-body-tweaks z-depth-1" >
-                  <center><img  style="cursor:pointer" src="{{asset('default-imgs/100k-ico.png')}}" onclick="window.location ='/'"/></center>
-                    <form method="POST" action="{{ route('login') }}">
+                  <center><img class="phone-auth-logo"  style="cursor:pointer" src="{{asset('default-imgs/100k-ico.png')}}" onclick="window.location ='/'"/></center>
+                    <form method="POST" action="{{ route('login') }}" class="phone-auth-form">
                         @csrf
                         <div class="form-group row">
                          
