@@ -93,12 +93,12 @@ The challenge is a creation by a group of students from the African Leadership U
               <center>
                 <img src="{{asset('default-imgs/Qr-3.png')}}" class="dummy-code"/><br/>
                 @guest
-                  <a class="phone-vanish btn btn-danger  my-depth-1 btn-finish round-me" href="http://localhost:8000/login/google">Login With <i class="fa fa-google"></i>oogle To Scan</a>
-                  <a style=" width:260px;" class="my-depth-1 phone-vanish btn btn-default round-me subscribe-button  btn-finish" href="http://localhost:8000/login">Login With A 100k Account To Scan</a>
+                  <a class="phone-vanish btn btn-danger  my-depth-1 btn-finish round-me" href="/login/google">Login With <i class="fa fa-google"></i>oogle To Scan</a>
+                  <a style=" width:260px;" class="my-depth-1 phone-vanish btn btn-default round-me subscribe-button  btn-finish" href="/login">Login With A 100k Account To Scan</a>
                   
                   <small class="pc-vanish">Login With </small></br>
-                  <a class="pc-vanish btn btn-danger round-me " href="http://localhost:8000/login/google"><i class="fa fa-google"></i></a>
-                  <a style="" class="pc-vanish btn btn-default subscribe-button round-me" href="http://localhost:8000/login">100K</a>
+                  <a class="pc-vanish btn btn-danger round-me " href="/login/google"><i class="fa fa-google"></i></a>
+                  <a style="" class="pc-vanish btn btn-default subscribe-button round-me" href="/login">100K</a>
                 @else  
                   <button class="btn btn-danger btn-finish round-me" onclick="alert('Will Be implemented Soon .....!')">Scan </button>
                 @endguest
