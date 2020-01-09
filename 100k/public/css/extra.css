@@ -89,6 +89,34 @@
 .vanish{
   opacity:0;
 }
+
+.guiding-box{
+  background:transparent; 
+  border:solid 2px #fbc1ff ; 
+  width:340px; 
+  height:270px;
+  position:absolute;
+  z-index:10;
+  margin:34px 155px;
+}
+#start-capture{
+  position: absolute;
+  left:34%; 
+  top:44%;
+  z-index:15;
+  padding:16px;
+  background:white; 
+  border:white;
+  color:#282828;
+}
+.video-curtain{
+  position:absolute; 
+  width:96%; 
+  height:40vh; 
+  background:#a8a0e5; 
+  z-index:11;
+  border-radius:4px;
+}
 .plant-btn{
   padding:20px 90px;
   font-weight: 700;

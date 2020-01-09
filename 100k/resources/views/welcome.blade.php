@@ -88,19 +88,28 @@ The challenge is a creation by a group of students from the African Leadership U
       <div class="scanner-container phone-scanner-cont-height">
         <div class="col-md-6 col-lg-6 offset-md-3" style="padding-top:30px;">
         
-            <div class="my-card phone-scanner-height z-depth-1 popout">
+            <div class="">
               {{-- <video id="code-preview"></video>  --}}
               <center>
-                <img src="{{asset('default-imgs/Qr-3.png')}}" class="dummy-code"/><br/>
+                
                 @guest
-                  <a class="phone-vanish btn btn-danger  my-depth-1 btn-finish round-me" href="/login/google">Login With <i class="fa fa-google"></i>oogle To Scan</a>
-                  <a style=" width:260px;" class="my-depth-1 phone-vanish btn btn-default round-me subscribe-button  btn-finish" href="/login">Login With A 100k Account To Scan</a>
-                  
-                  <small class="pc-vanish">Login With </small></br>
-                  <a class="pc-vanish btn btn-danger round-me " href="/login/google"><i class="fa fa-google"></i></a>
-                  <a style="" class="pc-vanish btn btn-default subscribe-button round-me" href="/login">100K</a>
-                @else  
-                  <button class="btn btn-danger btn-finish round-me" onclick="alert('Will Be implemented Soon .....!')">Scan </button>
+                  <div class="my-card phone-scanner-height z-depth-1 popout">
+                    <img src="{{asset('default-imgs/Qr-3.png')}}" class="dummy-code"/><br/>
+                    <a class="phone-vanish btn btn-danger  my-depth-1 btn-finish round-me" href="/login/google">Login With <i class="fa fa-google"></i>oogle To Scan</a>
+                    <a style=" width:260px;" class="my-depth-1 phone-vanish btn btn-default round-me subscribe-button  btn-finish" href="/login">Login With A 100k Account To Scan</a>
+                    
+                    <small class="pc-vanish">Login With </small></br>
+                    <a class="pc-vanish btn btn-danger round-me " href="/login/google"><i class="fa fa-google"></i></a>
+                    <a style="" class="pc-vanish btn btn-default subscribe-button round-me" href="/login">100K</a>
+                  </div>
+                  @else  
+                    <div class="video-curtain"></div>
+                    <div class="my-card phone-scanner-height z-depth-1" style="background:black">
+                      <div class="guiding-box"></div>
+                      <video id="qr-video" style="left:33px;position:absolute; margin-top:10px; height:38vh; 100%;display:block;"></video>
+                      <button id="start-capture" style="font-weight:800;" class="btn btn-success z-depth-1 btn-finish round-me" style="" >Scan </button>
+                      <button id="m-close-scanner" class="btn btn-default round-me z-depth-1 popout" style="display:none; margin-top:-80px; z-index:15;background:white;"><i class="fa fa-close"></i></button>
+                    </div>
                 @endguest
                 
               </center>
@@ -166,7 +175,8 @@ The challenge is a creation by a group of students from the African Leadership U
 
 @endsection
 
-@section('custom-js')
+
+  @section('custom-js')
   
     <script>
       var map;

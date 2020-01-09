@@ -12,8 +12,7 @@
     <!-- Scripts -->
    
     <script src="{{ asset('js/app.js') }}" defer></script>
-    <script src="{{ asset('js/extra/instascan.min.js') }}" defer></script>
-    <script src="{{ asset('js/extra/qr-controller.js') }}" defer></script>
+    <script type="module" src="{{asset('js/extra/Scanner.js')}}" defer></script>
     <script src="{{ asset('js/extra/anime.js') }}" defer></script>
 
     <!-- Fonts -->
