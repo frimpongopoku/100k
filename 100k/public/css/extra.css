@@ -90,6 +90,13 @@
   opacity:.7; 
   z-index:500;
 }
+.modal-close-btn{
+  position:fixed;
+  top:calc(18%); 
+  left:calc(50%);
+  background:red; 
+  color:white;
+}
 .tree-info{
   border:solid 2px #f0eeee; 
   padding:10px 20px; 
@@ -258,6 +265,9 @@
   background:#ebe8e8;
 }
 
+.unseen{
+  display:none;
+}
 .invisible{
   opacity: 0;
 }

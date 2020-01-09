@@ -2,29 +2,53 @@
 
 @section('content')
 {{-- ================================= MODAL AREA ==================================== --}}
-<div>
-  
-    <div class="s-modal my-card z-depth-1">
-      <center> 
-        <h1><i class="fa fa-check-circle text text-success"></i> Scan Complete </h1> 
-          <h3 class="m-gray"><b>Owner:</b> Frimpong Opoku Aygyemang </h3> 
-          <h3 class="m-gray"><b>Email:</b> Frimpong@yahoo.com </h3> 
-          <div class="tree-info"> 
-            <p style="color:lightgray; margin-bottom:1px !important">Tree Information</p> 
-            <small class="text text-danger">Aseiosps, </small>
-            <smalsmall class="text text-danger">Aseiosps</p>
-         
+    <div id="modalion" class="unseen">
+       
+        <div class="s-modal my-card z-depth-1" >
+          <button id="close-modalion" onClick = "closeModal()" class="popout btn btn-default z-depth-1 modal-close-btn round-me"> 
+            <i class="fa fa-close"></i>
+          </button>
+          <div id="content">
+            <div id="sorry" class="unseen">
+              <center> 
+                <h1 style="color:#f0625e"><i class="fa fa-exclamation-circle "></i> Sorry, tree already owned! </h1>
+                <p class="m-gray">This tree already belongs to <span><i class="fa fa-verified-user"></i> <b> Frimpong Opoku Agyemang</b> </span><br/> 
+                  please scan another tree.
+                </p>
+                <img src="{{asset('default-imgs/sad-tree.png')}}"  style="height:100px; opacity:.8" /><br/>
+                <img src="{{asset('default-imgs/100k-ico.png')}}"  style="height:100px; opacity:.3" /> 
+              </center>
+            </div>
+            <div id = "complete-scan" class="unseen">
+              <center> 
+                <h1><i class="fa fa-check-circle text text-success"></i> Scan Complete </h1> 
+                  <h3 class="m-gray"><b>Owner:</b> <span id="user-name"> Frimpong Opoku Aygyemang</span> </h3> 
+                  <h3 class="m-gray"><b>Email:</b> <span id="user-email">Frimpong@yahoo.com</span> </h3> 
+                  <div class="tree-info"> 
+                    <p style="color:lightgray; margin-bottom:1px !important">Tree Information</p> 
+                    <small class="text text-danger" id="tree-info-1">Aseiosps, </small>
+                    <small class="text text-danger" id="tree-info-2">Aseiosps</small>
+                  </div>
+                  <h6>NEXT STEP</h6>
+                  <small>Now <b>hug</b> your tree tightly, and press the button below </small><br/><br/>
+                  <button id="hook-btn" onClick ="streamToBackEnd()" class="btn btn-success z-depth-1 round-me" style="padding:15px 30px;"> Hook Me To My Tree </button>
+              </center>
+            </div>
+             <div id="Hurray" class="unseen">
+              <center> 
+                <h1><i class="fa fa-check-circle text text-success"></i> Congratulations! </h1>
+                <p class="m-gray"><b> + 1 new </b> tree planted </p>
+                <h4> You have <b>3</b> trees</h4>
+                <h2> <b>35 / 100,000 </b> planted in total </h2><br/>
+                {{-- <button class="btn btn-danger round-me z-depth-1" style="padding:13px 60px">Close </button> --}}
+                <img src="{{asset('default-imgs/100k-ico.png')}}"  style="height:100px; opacity:.3" />
+              </center>
+            </div> 
           </div>
-          <h6>NEXT STEP</h6>
-          <small>Now <b>hug</b> your tree tightly, and press the button below </small><br/><br/>
-          <button class="btn btn-success z-depth-1 round-me" style="padding:15px 30px;"> Hook Me To My Tree </button>
-          
-      </center>
+        </div>
+      <div class="s-modal-overlay"></div>
     </div>
-  
-  <div class="s-modal-overlay">
-</div>
-</div>
+    {{-- =================================== END OF MODAL AREA ========================= --}}
   <div style="padding-top:60px;" class="vanish" id="main-div">
     <div class="m-header"> 
       <div class="row">
@@ -111,7 +135,7 @@ The challenge is a creation by a group of students from the African Leadership U
       </div>
       <div class="scanner-container phone-scanner-cont-height">
         <div class="col-md-6 col-lg-6 offset-md-3" style="padding-top:30px;">
-          <button id="generate">Call location</button>
+          <button id="genera" onClick = "showModal()">Call location</button>
         
             <div class="">
               {{-- <video id="code-preview"></video>  --}}
@@ -202,7 +226,6 @@ The challenge is a creation by a group of students from the African Leadership U
 
 
   @section('custom-js')
-  
     <script>
       var map;
       function initMap() {
