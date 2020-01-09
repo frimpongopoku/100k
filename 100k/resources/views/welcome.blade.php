@@ -1,6 +1,30 @@
 @extends('layouts.welcome-nav') 
 
 @section('content')
+{{-- ================================= MODAL AREA ==================================== --}}
+<div>
+  
+    <div class="s-modal my-card z-depth-1">
+      <center> 
+        <h1><i class="fa fa-check-circle text text-success"></i> Scan Complete </h1> 
+          <h3 class="m-gray"><b>Owner:</b> Frimpong Opoku Aygyemang </h3> 
+          <h3 class="m-gray"><b>Email:</b> Frimpong@yahoo.com </h3> 
+          <div class="tree-info"> 
+            <p style="color:lightgray; margin-bottom:1px !important">Tree Information</p> 
+            <small class="text text-danger">Aseiosps, </small>
+            <smalsmall class="text text-danger">Aseiosps</p>
+         
+          </div>
+          <h6>NEXT STEP</h6>
+          <small>Now <b>hug</b> your tree tightly, and press the button below </small><br/><br/>
+          <button class="btn btn-success z-depth-1 round-me" style="padding:15px 30px;"> Hook Me To My Tree </button>
+          
+      </center>
+    </div>
+  
+  <div class="s-modal-overlay">
+</div>
+</div>
   <div style="padding-top:60px;" class="vanish" id="main-div">
     <div class="m-header"> 
       <div class="row">
@@ -15,15 +39,15 @@
       </div>
       <div class="col-md-6 col-lg-6" style="padding:0px"> 
         <div class="tree-group vanish tree-phone-margin"> 
-          <img src="{{asset('default-imgs/Tree1.png')}}"  class="tree tree-1" />
-          <img src="{{asset('default-imgs/Tree1.png')}}"  class="tree tree-6 phone-vanish" />
-          <img src="{{asset('default-imgs/Tree1.png')}}"  class="tree tree-2" />
-          <img src="{{asset('default-imgs/Tree1.png')}}"  class="tree tree-3 phone-vanish" />
-          <img src="{{asset('default-imgs/Tree1.png')}}"  class="tree tree-4" />
-          <img src="{{asset('default-imgs/Tree1.png')}}"  class="tree tree-5" />
-          <img src="{{asset('default-imgs/Tree1.png')}}"  class="tree tree-7" />
-          <img src="{{asset('default-imgs/Tree1.png')}}"  class="tree tree-8" />
-          <img src="{{asset('default-imgs/Tree1.png')}}"  class="tree tree-9" />
+          <img src="{{asset('default-imgs/Tree-comp.png')}}"  class="tree tree-1" />
+          <img src="{{asset('default-imgs/Tree-comp.png')}}"  class="tree tree-6 phone-vanish" />
+          <img src="{{asset('default-imgs/Tree-comp.png')}}"  class="tree tree-2" />
+          <img src="{{asset('default-imgs/Tree-comp.png')}}"  class="tree tree-3 phone-vanish" />
+          <img src="{{asset('default-imgs/Tree-comp.png')}}"  class="tree tree-4" />
+          <img src="{{asset('default-imgs/Tree-comp.png')}}"  class="tree tree-5" />
+          <img src="{{asset('default-imgs/Tree-comp.png')}}"  class="tree tree-7" />
+          <img src="{{asset('default-imgs/Tree-comp.png')}}"  class="tree tree-8" />
+          <img src="{{asset('default-imgs/Tree-comp.png')}}"  class="tree tree-9" />
         </div>
         
       </div>
@@ -87,6 +111,7 @@ The challenge is a creation by a group of students from the African Leadership U
       </div>
       <div class="scanner-container phone-scanner-cont-height">
         <div class="col-md-6 col-lg-6 offset-md-3" style="padding-top:30px;">
+          <button id="generate">Call location</button>
         
             <div class="">
               {{-- <video id="code-preview"></video>  --}}
@@ -169,8 +194,8 @@ The challenge is a creation by a group of students from the African Leadership U
             <center>
           </div>
       </div>
-
     </div>
+    
   </div>
 
 @endsection
@@ -186,6 +211,7 @@ The challenge is a creation by a group of students from the African Leadership U
           zoom: 8
         });
       }
+      
     </script>
   
 
