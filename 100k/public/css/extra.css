@@ -68,6 +68,17 @@
   /* .phone-vanish{display:block} */
 }
 
+
+.side-counter{
+  background:white; 
+  padding:25px 45px;
+  z-index:2; 
+  position:fixed; 
+  right:0; 
+  top:50%;
+  border-top-left-radius: 55px; 
+  border-bottom-left-radius: 55px;
+}
 .scale-to-phone{}
 .phone-margin{}
 .auth-pages-top-fix{}
@@ -89,6 +100,14 @@
   background:black ;
   opacity:.7; 
   z-index:500;
+}
+.key{
+  margin: 35px;
+    border: solid 1px #8d2fe3;
+    margin-left: 40%;
+    margin-right: 40%;
+    padding: 10px;
+    border-radius: 10px;
 }
 .modal-close-btn{
   position:fixed;
@@ -137,7 +156,7 @@
 #start-capture{
   position: absolute;
   left:34%; 
-  top:44%;
+  top:calc(50%);
   z-index:15;
   padding:16px;
   background:white; 

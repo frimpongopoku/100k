@@ -24,3 +24,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/auth.get','Main@returnUser');
 Route::get('/get-token','Main@getToken');
 Route::post('/user.scanned','Main@saveScannedData');
+Route::get('/get-count', 'Main@collectTreeData');
+Route::get('/factory','Main@testFactory');
+Route::get('/count.planted','Main@countPlanted');

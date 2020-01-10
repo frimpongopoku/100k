@@ -1,6 +1,12 @@
 @extends('layouts.welcome-nav') 
 
 @section('content')
+{{-- ================SIDE COUNTER ======================= --}}
+  <div class="side-counter z-depth-2"> 
+    <h2 id="counter" style="text-shadow: 0px 1px 2px black; color:#a30aa3;"></h2>
+  </div>
+
+{{-- /==============================END SIDE COUNTER ========================== --}}
 {{-- ================================= MODAL AREA ==================================== --}}
     <div id="modalion" class="unseen">
        
@@ -12,7 +18,7 @@
             <div id="sorry" class="unseen">
               <center> 
                 <h1 style="color:#f0625e"><i class="fa fa-exclamation-circle "></i> Sorry, tree already owned! </h1>
-                <p class="m-gray">This tree already belongs to <span><i class="fa fa-verified-user"></i> <b> Frimpong Opoku Agyemang</b> </span><br/> 
+                <p class="m-gray">This tree already belongs to <span><i class="fa fa-verified-user"></i> <b> <span id="owned-name">Frimpong Opoku Agyemang</span></b> </span><br/> 
                   please scan another tree.
                 </p>
                 <img src="{{asset('default-imgs/sad-tree.png')}}"  style="height:100px; opacity:.8" /><br/>
@@ -135,7 +141,6 @@ The challenge is a creation by a group of students from the African Leadership U
       </div>
       <div class="scanner-container phone-scanner-cont-height">
         <div class="col-md-6 col-lg-6 offset-md-3" style="padding-top:30px;">
-          <button id="genera" onClick = "showModal()">Call location</button>
         
             <div class="">
               {{-- <video id="code-preview"></video>  --}}
@@ -170,12 +175,18 @@ The challenge is a creation by a group of students from the African Leadership U
     </div>
     {{--  ----------MAPS AREA --------------- --}}
     
-    <div class="maps-area phone-width" style="background:lightgray;height:730px;"> 
+    <div class="maps-area phone-width" style="background:lightgray;height:850px;"> 
       <div class="banner">
         <h1 class="banner-text">FIND YOUR TREES ON THE MAP </h1>
       </div>
     
-      <center><div id="map" class="z-depth-1" style="border-radius:10px;height:500px; width:80%;margin:40px"></div></center>
+      <center>
+        <div class="key">
+          <img src="{{asset('default-imgs/red-tree.png')}}" ><small> Your Trees </small>
+          <img src="{{asset('default-imgs/tree-ico.png')}}" ><small> Other Trees </small>
+        </div>
+        <div id="map" class="z-depth-1" style="border-radius:10px;height:500px; width:80%;margin:40px"></div>
+      </center>
      
     </div>
 
@@ -230,10 +241,12 @@ The challenge is a creation by a group of students from the African Leadership U
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
+          center: {lat: 5.625505899999999, lng:-0.2945928},
+          zoom: 10
         });
+        window.map = map;
       }
+     
       
     </script>
   

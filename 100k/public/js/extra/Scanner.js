@@ -9,10 +9,10 @@ userName = $('#user-name');
 userEmail = $('#user-email');
 completeDiv = $('#complete-scan');
 const video = document.getElementById("qr-video");
+
 function setResult( result) {
-  console.log(result);
   var data = resultToJson(result);
-  console.log(data);
+  clearScannedData();//just so a user can scan more than once, and not have to refresh
   closeScanner();
   showModal();
   window.scannedData = data;
