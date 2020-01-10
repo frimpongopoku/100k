@@ -160,7 +160,7 @@ The challenge is a creation by a group of students from the African Leadership U
                     <div class="video-curtain"></div>
                     <div class="my-card phone-scanner-height z-depth-1" style="background:black">
                       <div class="guiding-box"></div>
-                      <video id="qr-video" style="left:33px;position:absolute; margin-top:10px; height:38vh; 100%;display:block;"></video>
+                      <video id="qr-video" style="left:13%;position:absolute; margin-top:10px; height:38vh; 100%;display:block;"></video>
                       <button id="start-capture" style="font-weight:800;" class="btn btn-success z-depth-1 btn-finish round-me" style="" >Scan </button>
                       <button id="m-close-scanner" class="btn btn-default round-me z-depth-1 popout" style="display:none; margin-top:-80px; z-index:15;background:white;"><i class="fa fa-close"></i></button>
                     </div>

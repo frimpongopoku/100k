@@ -27,3 +27,4 @@ Route::post('/user.scanned','Main@saveScannedData');
 Route::get('/get-count', 'Main@collectTreeData');
 Route::get('/factory','Main@testFactory');
 Route::get('/count.planted','Main@countPlanted');
+Route::get('/qr.generate','Main@generateQR');

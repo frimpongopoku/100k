@@ -151,7 +151,7 @@
   height:270px;
   position:absolute;
   z-index:10;
-  margin:34px 155px;
+  margin:34px 205px;
 }
 #start-capture{
   position: absolute;
@@ -165,7 +165,7 @@
 }
 .video-curtain{
   position:absolute; 
-  width:96%; 
+  width:97%; 
   height:40vh; 
   background:#a8a0e5; 
   z-index:11;
@@ -261,7 +261,7 @@
   width:100%;
 }
 .about-text{
-  font-size:17px;
+  font-size:21px;
   color:#a09e9e;
   padding:20px 180px 20px 180px;
   text-align: justify;
