@@ -122,7 +122,7 @@
     </div>
 
     @yield('custom-js')
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKjypPjP5teg5GZz7Jg4OCg4IMXENJME4&callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=initMap"
     async defer></script>
 
     
