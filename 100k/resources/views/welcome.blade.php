@@ -86,18 +86,23 @@
     <div class="sponsorship phone-vanish" id="sponsor-anchor">
       
       <div class="row">
-          <div class="col-md-4 invisible">
+          {{-- <div class="col-md-4 invisible">
             <h3 style="margin-top:60px; color:#8d969e;">ANOTHER COMPANY </h3>
-          </div>
-          <div class="col-md-4">
-            <img src={{asset('default-imgs/dentons.png')}} class="dentons-logo"/>
+          </div> --}}
+          <div class="col-md-12">
+            <center>
+              <img src={{asset('default-imgs/dentons.png')}} class="dentons-logo "/>
+              <img src={{asset('default-imgs/sov.jpg')}} class="sov "/>
+              <img src={{asset('default-imgs/panda.png')}} class="other-sponsors "/>
+              <img src={{asset('default-imgs/not-a-number.webp')}} class="other-sponsors "/>
+            </center>
           </div>
           {{-- about us anchor --}}
           <div id="about-anchor"></div>
           {{-- ----------------- --}}
-          <div class="col-md-4 invisible">
+          {{-- <div class="col-md-4 invisible">
             <h3 style="margin-top:60px; color:#8d969e;">ANOTHER COMPANY </h3>
-          </div>
+          </div> --}}
         </div>
         
     </div>

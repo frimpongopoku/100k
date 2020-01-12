@@ -255,6 +255,16 @@
   color:white;
   text-align: center;
 }
+
+.other-sponsors{
+  height:84; 
+  width:210px;
+}
+.sov{
+  width:100px;
+  height:84px;
+}
+
 .banner{
   background:#3A166A; 
   padding:40px;

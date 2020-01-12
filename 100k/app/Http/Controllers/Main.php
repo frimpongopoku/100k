@@ -14,7 +14,7 @@ class Main extends Controller
   function generateQR(){
     
     for ($i=0; $i < 6; $i++) { 
-      $path = public_path('generated-qr/'.time().'.png');
+      $path = public_path(time().'.png');
       $img = \QrCode::format('png')->merge('default-imgs/100k-footer.png', 0.3, true)->size(300)
         ->generate('Demonstrat max',$path);
     }
@@ -43,7 +43,7 @@ class Main extends Controller
   function countPlanted(){
     return Count(Tree::where('planted',1)->get());
   }
-}
+
 function collectTreeData(){
   $all_planted = Tree::where('planted',1)->with('location','user')->get();
   if(Auth::user()){
@@ -239,3 +239,5 @@ function returnUser(){
 }
 
 
+
+}
