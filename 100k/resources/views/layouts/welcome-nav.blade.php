@@ -31,7 +31,7 @@
 </head>
 <body>
     <div id="app" class="phone-body-fix">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm stick-to-top" style="height:70px;">
+        <nav class="navbar navbar-expand-md navbar-light bg-white  stick-to-top z-depth-1 nav-border " style="height:70px;">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <img src="{{asset('default-imgs/100k-ico.png')}}" style="width:190px" />

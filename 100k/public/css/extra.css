@@ -93,6 +93,7 @@
 .phone-about-fix{}
 
 /* --------------------------- */
+
 .s-modal-overlay{
   position:fixed; 
   width:100%; 
@@ -143,7 +144,10 @@
 .vanish{
   opacity:0;
 }
-
+.footer-a{
+  color:lightgray;
+  font-size:19px;
+}
 .guiding-box{
   background:transparent; 
   border:solid 2px #fbc1ff ; 
@@ -175,11 +179,14 @@
   padding:20px 90px;
   font-weight: 700;
   font-size: 16px;
+  background:white;
+  color:black;
 }
 .plant-btn:hover{
   background:red; 
   color:white; 
   transition: .6s ease-in-out;
+  
 }
 .hero-title{
   color:white;
@@ -221,11 +228,20 @@
 
 }
 
+.nav-border{
+  border:solid; 
+  border-width: 0px; 
+  border-bottom-width: 4px;
+  border-bottom-color: #f05555;
+}
 .zero-radius{
   border-radius:0px;
 }
 .footer{
-  background:#1a0239;
+  border:solid; 
+  border-top-width: 11px;
+  border-top-color:#c37413;
+  background:#1f1e20;
   height:300px; 
   width:100%;
   padding:30px;

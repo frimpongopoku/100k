@@ -36,7 +36,7 @@
                     <small class="text text-danger" id="tree-info-2">Aseiosps</small>
                   </div>
                   <h6>NEXT STEP</h6>
-                  <small>Now <b>hug</b> your tree tightly, and press the button below </small><br/><br/>
+                  <small>Now <b>hug</b> your tree tightly, or <b>squat</b> next to it, and press the button below </small><br/><br/>
                   <button id="hook-btn" onClick ="streamToBackEnd()" class="btn btn-success z-depth-1 round-me" style="padding:15px 30px;"> Hook Me To My Tree </button>
               </center>
             </div>
@@ -62,7 +62,7 @@
         <div class="brand-div vanish" style="padding-top:16%;position:relative; left:-120px"> 
           <center>
             <h1 class="hero-title" >100k<span style="color:orange">Challenge</span></h1>
-            <button class="plant-btn btn btn-default round-me z-depth-1" onclick="window.location='#scanner'">Plant A Tree </button><br/>
+            <a class="plant-btn btn btn-default round-me z-depth-1" href="#scanner">Plant A Tree </a><br/>
             <img src = "{{asset('default-imgs/100k-footer.png')}}" style="height:100px; width:100px; margin-top:30px;" />
           </center>
         </div>
@@ -124,7 +124,7 @@ The challenge is a creation by a group of students from the African Leadership U
     restore 150 million hectares of the world's degraded and deforested lands by 2020, and 350 million
     hectares by 2030.<br/><br/>
    
-    Pursuant to the 17th goal in the UN Sustainable Development Goals - to s trengthen the means of
+    Pursuant to the 17th goal in the UN Sustainable Development Goals - to strengthen the means of
     implementation and revitalize the global partnership for sustainable development , the 100k
     Challenge team is partnering with various Ministries and departments within the Government of
     Mauritius, as well as with Corporates, Universities, tree nurseries, local youth groups and the
@@ -212,26 +212,26 @@ The challenge is a creation by a group of students from the African Leadership U
     </div>
     <div class="footer phone-vanish"> 
       <div class="row"> 
-          <div class="col-lg-6 col-md-6"> 
-            <div class="row">
-                <div class="col-lg-6">  
-                  <img src="{{asset('default-imgs/100k-footer.png')}}" style="display:inline-block;height:130px; margin-top:60px" />
-                </div>
-                <div class="col-lg-6 social-area">
-                  <button class="btn btn-default round-me m-social" style="background:blue; color:white;"><i class="fa fa-facebook"></i></button>
-                  <button class="btn btn-default round-me m-social" style="background:white"><i class="fa fa-instagram"></i></button>
-                  <button class="btn btn-default round-me m-social" style="background:#00a1ff; color:white;"><i class="fa fa-twitter"></i></button>
-                  <p style="margin-top:5px; color:lightgray">Follow Us On Social Media </p>
-                </div>
-              
+          <div class="col-md-6 col-lg-6 " style="display:inherit"> 
+            <img style="height:130px; margin:30px" src="{{asset('default-imgs/100k-footer.png')}}"/>
+            <div style="margin:35px;margin-top:70px;">
+              <button class="btn btn-default round-me m-social" style="background:blue; color:white;"><i class="fa fa-facebook"></i></button>
+              <button class="btn btn-default round-me m-social" style="background:white"><i class="fa fa-instagram"></i></button>
+              <button class="btn btn-default round-me m-social" style="background:#00a1ff; color:white;"><i class="fa fa-twitter"></i></button>
+              <p style="margin-top:5px; color:lightgray">Follow Us On Social Media </p>
+            </div>
+            <div style="white-space:nowrap; margin-top:30px;"> 
+              <h4 style="color:white;">QUICK LINKS</h5> 
+                <a href="#" class="footer-a">Register</a><br/>
+                <a href="#" class="footer-a">Login</a><br/>
+                <a href="#" class="footer-a">See Your Trees</a><br/>
+                <a href="#" class="footer-a">Sponsors</a><br/>
             </div>
           </div>
-          <div class="col-md-6 col-g-6" style="padding-top:70px;"> 
-            <center>
-              <p style="color:#887d9f">Receive weekly updates from us!</p>
-              <input style="margin:10px;  padding:20px;"type="email" placeholder="email" name="email" class="form-control round-me" /> 
-              <button class="btn btn-default btn-finish subscribe-button z round-me">Subscribe</button>
-            <center>
+          <div class="col-md-4 col-lg-4 "> 
+            <center> 
+             
+            </center>
           </div>
       </div>
     </div>
