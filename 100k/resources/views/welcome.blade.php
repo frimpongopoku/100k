@@ -165,7 +165,7 @@ The challenge is a creation by a group of students from the African Leadership U
                     <div class="video-curtain"></div>
                     <div class="my-card phone-scanner-height z-depth-1" style="background:black">
                       <div class="guiding-box"></div>
-                      <video id="qr-video" style="left:13%;position:absolute; margin-top:10px; height:38vh; 100%;display:block;"></video>
+                      <video id="qr-video" class="video"></video>
                       <button id="start-capture" style="font-weight:800;" class="btn btn-success z-depth-1 btn-finish round-me" style="" >Scan </button>
                       <button id="m-close-scanner" class="btn btn-default round-me z-depth-1 popout" style="display:none; margin-top:-80px; z-index:15;background:white;"><i class="fa fa-close"></i></button>
                     </div>
@@ -222,15 +222,18 @@ The challenge is a creation by a group of students from the African Leadership U
             </div>
             <div style="white-space:nowrap; margin-top:30px;"> 
               <h4 style="color:white;">QUICK LINKS</h5> 
-                <a href="#" class="footer-a">Register</a><br/>
-                <a href="#" class="footer-a">Login</a><br/>
-                <a href="#" class="footer-a">See Your Trees</a><br/>
-                <a href="#" class="footer-a">Sponsors</a><br/>
+                <a href="/register" class="footer-a">Create A <b>100KChallenge</b> Account </a><br/>
+                <a href="/login" class="footer-a">Login</a><br/>
+                <a href="#map-anchor" class="footer-a">See Your Trees</a><br/>
+                <a href="#sponsor-anchor" class="footer-a">Sponsors</a><br/>
             </div>
           </div>
-          <div class="col-md-4 col-lg-4 "> 
+          <div class="col-md-6 col-lg-6 "> 
             <center> 
-             
+              <h2 style="color:#b7b4b4; margin-top:15px;">Subscribe</h2> 
+              <p style="color:#908d8d">Leave your email with us for updates <br/>on the latest comings of <b>100kChallenge</b></p>
+              <input style="margin:10px; margin-top:-5px; width:81%;display:inline-block;  padding:20px;"type="email" placeholder="email" name="email" class="form-control round-me" /> 
+              <button class="btn btn-default btn-finish subscribe-button round-me">Subscribe</button><br/>
             </center>
           </div>
       </div>

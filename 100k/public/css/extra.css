@@ -6,7 +6,7 @@
     display:none;
   }
   .tree-phone-margin{
-    margin-top:120px;
+    margin-top:220px;
   }
   .phone-about-fix{
     margin-top:315px;
@@ -58,12 +58,88 @@
   .scale-to-phone{
     transform:scale(.9)
   }
+  .key{
+    margin: 35px;
+      border: solid 1px #8d2fe3;
+      margin-left: 24%;
+      margin-right: 24%;
+      padding: 10px;
+      border-radius: 10px;
+  }
+  .video{
+    left:8%;position:absolute; margin-top:40px; height:34vh;display:block;
+  }
+  .guiding-box{
+    background: transparent;
+    border: solid 2px #fbc1ff;
+    width: 240px;
+    height: 200px;
+    position: absolute;
+    z-index: 10;
+    margin: 56px 105px;
+  }
+  .video-curtain{
+    position: absolute;
+    width: 95%;
+    height: 45vh;
+    background: #a8a0e5;
+    z-index: 11;
+    border-radius: 4px;
+  }
+  #start-capture{
+    position: absolute;
+    left: 29%;
+    top: calc(50%);
+    z-index: 15;
+    padding: 16px;
+    background: white;
+    border: white;
+    color: #282828;
+  }
 }
 
-/* Exclusive pc mode */
+/* ================================ Exclusive pc mode ================= */
 @media only screen and ( min-width: 785px){
   .pc-vanish{
     display:none;
+  }
+  .key{
+    margin: 35px;
+      border: solid 1px #8d2fe3;
+      margin-left: 40%;
+      margin-right: 40%;
+      padding: 10px;
+      border-radius: 10px;
+  }
+  .video{
+    left:13%;position:absolute; margin-top:10px; height:38vh;display:block;
+  }
+  .guiding-box{
+    background:transparent; 
+    border:solid 2px #fbc1ff ; 
+    width:340px; 
+    height:270px;
+    position:absolute;
+    z-index:10;
+    margin:34px 205px;
+  }
+  .video-curtain{
+    position:absolute; 
+    width:97%; 
+    height:40vh; 
+    background:#a8a0e5; 
+    z-index:11;
+    border-radius:4px;
+  }
+  #start-capture{
+    position: absolute;
+    left:34%; 
+    top:calc(50%);
+    z-index:15;
+    padding:16px;
+    background:white; 
+    border:white;
+    color:#282828;
   }
   /* .phone-vanish{display:block} */
 }
@@ -72,7 +148,7 @@
 .side-counter{
   background:white; 
   padding:25px 45px;
-  z-index:2; 
+  z-index:15; 
   position:fixed; 
   right:0; 
   top:50%;
@@ -102,14 +178,7 @@
   opacity:.7; 
   z-index:500;
 }
-.key{
-  margin: 35px;
-    border: solid 1px #8d2fe3;
-    margin-left: 40%;
-    margin-right: 40%;
-    padding: 10px;
-    border-radius: 10px;
-}
+
 .modal-close-btn{
   position:fixed;
   top:calc(18%); 
@@ -148,33 +217,9 @@
   color:lightgray;
   font-size:19px;
 }
-.guiding-box{
-  background:transparent; 
-  border:solid 2px #fbc1ff ; 
-  width:340px; 
-  height:270px;
-  position:absolute;
-  z-index:10;
-  margin:34px 205px;
-}
-#start-capture{
-  position: absolute;
-  left:34%; 
-  top:calc(50%);
-  z-index:15;
-  padding:16px;
-  background:white; 
-  border:white;
-  color:#282828;
-}
-.video-curtain{
-  position:absolute; 
-  width:97%; 
-  height:40vh; 
-  background:#a8a0e5; 
-  z-index:11;
-  border-radius:4px;
-}
+
+
+
 .plant-btn{
   padding:20px 90px;
   font-weight: 700;
@@ -367,7 +412,7 @@
 .tree-7{
   right:10px;
   bottom:80px;
-  
+  z-index:9;
 }
 .tree-8{
   right:170px;

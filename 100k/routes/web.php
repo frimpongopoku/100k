@@ -28,3 +28,6 @@ Route::get('/get-count', 'Main@collectTreeData');
 Route::get('/factory','Main@testFactory');
 Route::get('/count.planted','Main@countPlanted');
 Route::get('/qr.generate','Main@generateQR');
+Route::get('/home',function(){
+  return view('welcome');
+});
