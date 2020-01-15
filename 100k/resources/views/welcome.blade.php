@@ -27,9 +27,9 @@
             </div>
             <div id = "complete-scan" class="unseen">
               <center> 
-                <h1><i class="fa fa-check-circle text text-success"></i> Scan Complete </h1> 
-                  <h3 class="m-gray"><b>Owner:</b> <span id="user-name"> Frimpong Opoku Aygyemang</span> </h3> 
-                  <h3 class="m-gray"><b>Email:</b> <span id="user-email">Frimpong@yahoo.com</span> </h3> 
+                <h1 class="scan-h1"><i class="fa fa-check-circle text text-success"></i> Scan Complete </h1> 
+                  <h3 class="m-gray modal-text"><b>Owner:</b> <span id="user-name"> Frimpong Opoku Aygyemang</span> </h3> 
+                  <h3 class="m-gray modal-text"><b>Email:</b> <span id="user-email">Frimpong@yahoo.com</span> </h3> 
                   <div class="tree-info"> 
                     <p style="color:lightgray; margin-bottom:1px !important">Tree Information</p> 
                     <small class="text text-danger" id="tree-info-1">Aseiosps, </small>
@@ -150,9 +150,9 @@ The challenge is a creation by a group of students from the African Leadership U
             <div class="">
               {{-- <video id="code-preview"></video>  --}}
               <center>
-                
+                 
                 @guest
-                  <div class="my-card phone-scanner-height z-depth-1 popout">
+                   <div class="my-card phone-scanner-height z-depth-1 popout">
                     <img src="{{asset('default-imgs/Qr-3.png')}}" class="dummy-code"/><br/>
                     <a class="phone-vanish btn btn-danger  my-depth-1 btn-finish round-me" href="/login/google">Login With <i class="fa fa-google"></i>oogle To Scan</a>
                     <a style=" width:260px;" class="my-depth-1 phone-vanish btn btn-default round-me subscribe-button  btn-finish" href="/login">Login With A 100k Account To Scan</a>

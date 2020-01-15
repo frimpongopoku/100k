@@ -1,3 +1,6 @@
+
+/* =========MOBILE PHONE AREA ========= */
+
 @media only screen and ( max-width: 785px){
   .phone-body-fix{
     width:480px;
@@ -96,10 +99,73 @@
     border: white;
     color: #282828;
   }
+  .scan-h1{
+    font-size:32px;
+  }
+  .modal-text{
+    font-size:20px;
+  }
+  .s-modal{
+    padding:46px;
+    position:fixed; 
+   width:91% !important;
+   min-height:48% !important;
+    left:4%; 
+    top:20%;
+    z-index:501;
+  
+  }
+  .tree-info{
+    border:solid 2px #f0eeee; 
+    padding:10px 20px; 
+    border-radius:10px;
+    margin:4px 22px;
+  }
+}
+/* ========IPHONE 10 ============= */
+@media only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) { 
+/* @media only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {  */
+
+  .video{
+
+    left: 8%;
+    position: absolute;
+    margin-top: 40px;
+    height: 29vh;
+    display: block;
+  }
+  .phone-scanner-height{
+    height:39vh !important;
+  }
+
+
 }
 
+
+/* ================ THE LIKES OF IPHONE 8 =============*/
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 736px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+      .video{
+
+        left: 8%;
+        position: absolute;
+        margin-top: 40px;
+        height: 32vh;
+        display: block;
+      }
+    
+
+    }
 /* ================================ Exclusive pc mode ================= */
 @media only screen and ( min-width: 785px){
+  .tree-info{
+    border:solid 2px #f0eeee; 
+    padding:10px 20px; 
+    border-radius:10px;
+    margin:4px 250px;
+  }
   .pc-vanish{
     display:none;
   }
@@ -140,6 +206,22 @@
     background:white; 
     border:white;
     color:#282828;
+  }
+  .scan-h1{
+    font-size:2.23rem;
+  }
+  .modal-text{
+    font-size:1.575;
+  }
+  .s-modal{
+    padding:96px;
+    position:fixed; 
+   width:70% !important;
+   min-height:58% !important;
+    left:15%; 
+    top:20%;
+    z-index:501;
+  
   }
   /* .phone-vanish{display:block} */
 }
@@ -186,25 +268,11 @@
   background:red; 
   color:white;
 }
-.tree-info{
-  border:solid 2px #f0eeee; 
-  padding:10px 20px; 
-  border-radius:10px;
-  margin:4px 250px;
-}
+
 .m-gray{
     color: #585858 !important;
   }
-.s-modal{
-  padding:96px;
-  position:fixed; 
- width:70% !important;
- min-height:58% !important;
-  left:15%; 
-  top:20%;
-  z-index:501;
 
-}
 .popout{ cursor:pointer;}
 .popout:hover{
   transform: scale(1.08);
