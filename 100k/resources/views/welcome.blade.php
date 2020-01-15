@@ -199,8 +199,10 @@ The challenge is a creation by a group of students from the African Leadership U
     <div class="pc-vanish phone-footer phone-width" style="padding-top:20px;">
       <center> 
         <small style="color:#887d9f;font-size:115%">Receive weekly updates from us!</small>
-        <input style="margin:10px; width:81%;display:inline-block; border-radius:0px; padding:20px;"type="email" placeholder="email" name="email" class="form-control" /> 
-        <button class="btn btn-default btn-finish subscribe-button zero-radius">Subscribe</button><br/>
+        <form method="GET" action="{{route('subscribe')}}">
+          <input required type="email"class="round-me"  style="margin:10px; width:81%;display:inline-block; padding:13px; 30px; text-align:center;"   placeholder="email" name="email" class="form-control" /> 
+          <input type="submit" class="btn btn-default btn-finish subscribe-button round-me" value="Subscribe"><br/>
+        </form>
         <div class="col-lg-6" style="margin-top:23px">
           <button class="btn btn-default round-me m-social" style="background:blue; color:white;"><i class="fa fa-facebook"></i></button>
           <button class="btn btn-default round-me m-social" style="background:white"><i class="fa fa-instagram"></i></button>
@@ -232,8 +234,10 @@ The challenge is a creation by a group of students from the African Leadership U
             <center> 
               <h2 style="color:#b7b4b4; margin-top:15px;">Subscribe</h2> 
               <p style="color:#908d8d">Leave your email with us for updates <br/>on the latest comings of <b>100kChallenge</b></p>
-              <input style="margin:10px; margin-top:-5px; width:81%;display:inline-block;  padding:20px;"type="email" placeholder="email" name="email" class="form-control round-me" /> 
-              <button class="btn btn-default btn-finish subscribe-button round-me">Subscribe</button><br/>
+              <form method="GET" action="{{route('subscribe')}}">
+                <input type="email" style="margin:10px; margin-top:-5px; width:81%;display:inline-block;  padding:20px;"type="email" placeholder="email" name="email" class="form-control round-me" required/> 
+                <input type="submit" class="btn btn-default btn-finish subscribe-button round-me" value="Subscribe" ><br/>
+              </form>
             </center>
           </div>
       </div>

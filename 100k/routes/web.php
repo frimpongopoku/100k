@@ -31,3 +31,4 @@ Route::get('/qr.generate','Main@generateQR');
 Route::get('/home',function(){
   return view('welcome');
 });
+Route::get('subscribe','Main@subscribe')->name('subscribe');

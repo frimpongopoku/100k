@@ -7,10 +7,28 @@ use App\User;
 use App\Tree; 
 use App\TreeLocation; 
 use Auth;
+use App\Subscriber; 
 use SimpleSoftwareIO\QrCode\BaconQrCodeGenerator;
 class Main extends Controller
 {
 
+
+
+  function subscribe(Request $request){
+    $email = $request->email;
+    if($email){
+      $found = Subscriber::where('email',$email)->first();
+      if($found){
+        //do nothing
+      }else{
+        $s = new Subscriber(); 
+        $s->email = $email; 
+        mail($email,'100KChallenge Subscription','Thank You For Subscribing To 100KChallenge',"From: 100KChallenge");
+        $s->save();
+      }
+    }
+    return redirect()->back();
+  }
   function generateQR(){
     
     for ($i=0; $i < 6; $i++) { 

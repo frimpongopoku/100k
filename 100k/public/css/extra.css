@@ -2,6 +2,11 @@
 /* =========MOBILE PHONE AREA ========= */
 
 @media only screen and ( max-width: 785px){
+  .tree-2{
+    bottom:10px;
+    left:220px;
+    z-index:0;
+  }
   .phone-body-fix{
     width:480px;
   }
@@ -33,7 +38,7 @@
     border-bottom-left-radius: 10px;
   }
   .phone-footer{
-    height:250px; 
+    height:260px; 
     background:#1a0239; 
  
   }
@@ -122,12 +127,11 @@
     margin:4px 22px;
   }
 }
-/* ========IPHONE 10 ============= */
+/* ========IPHONE 10 && its' likes ============= */
 @media only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) { 
 /* @media only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {  */
 
   .video{
-
     left: 8%;
     position: absolute;
     margin-top: 40px;
@@ -137,7 +141,6 @@
   .phone-scanner-height{
     height:39vh !important;
   }
-
 
 }
 
@@ -160,6 +163,11 @@
     }
 /* ================================ Exclusive pc mode ================= */
 @media only screen and ( min-width: 785px){
+  .tree-2{
+    bottom:90px;
+    left:160px;
+    z-index:0;
+  }
   .tree-info{
     border:solid 2px #f0eeee; 
     padding:10px 20px; 
@@ -454,11 +462,7 @@
 .tree-1{
   top:10px;
 }
-.tree-2{
-  bottom:10px;
-  left:210px;
-  z-index:10;
-}
+
 .tree-3{
   top:120px;
   right:40px;
