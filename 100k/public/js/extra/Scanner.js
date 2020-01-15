@@ -50,7 +50,6 @@ $('#m-close-scanner').click(()=>{
 $('#generate').click(()=>{
   if(navigator.geolocation){
     navigator.geolocation.getCurrentPosition((data)=>{
-      console.log("I am t he data", data);
       _lat  = data.coords.latitude; 
       _long = data.coords.longitude;
     })

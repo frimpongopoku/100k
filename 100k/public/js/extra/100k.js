@@ -4,6 +4,7 @@
 const countAndUpdate = function(){
   $.ajax({method:'GET',url:'/count.planted'}).done((number)=>{
     $('#counter').text(number);
+    $('#hurray-count').text(number);
   })
 }
 const plotMarker=   function(lat,long,owner,thumbnail,other){
@@ -52,6 +53,7 @@ const showSorry = function(){
 const showCongrats = function() {
     $("#complete-scan").fadeOut(100, function() {
         $("#Hurray").fadeIn();
+        $('#hurray-count').text(window.availableTrees.length);
     });
 };
 

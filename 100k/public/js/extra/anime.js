@@ -16,7 +16,7 @@ $(document).ready(() => {
         showAuthAnimations("login");
         showAuthAnimations("register");
         console.log("all done here");
-    }, 1500);
+    }, 1000);
 
     function animateBrandDiv() {
         setTimeout(() => {
@@ -34,7 +34,7 @@ $(document).ready(() => {
                 var tree = $(name);
                 tree.animate({ opacity: 1, width: 300 }, 900 + index * 500);
             }
-        }, 1500);
+        }, 1000);
     }
 
     function showAuthAnimations(type) {

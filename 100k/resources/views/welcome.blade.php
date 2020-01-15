@@ -42,10 +42,10 @@
             </div>
              <div id="Hurray" class="unseen">
               <center> 
-                <h1><i class="fa fa-check-circle text text-success"></i> Congratulations! </h1>
+                <h1 class="scan-h1"><i class="fa fa-check-circle text text-success"></i> Congratulations! </h1>
                 <p class="m-gray"><b> + 1 new </b> tree planted </p>
                 <h4> You have <b>3</b> trees</h4>
-                <h2> <b>35 / 100,000 </b> planted in total </h2><br/>
+                <h2 class="text text-success"> <b><span id="hurray-count">35</span> / 100,000 </b> planted in total </h2><br/>
                 {{-- <button class="btn btn-danger round-me z-depth-1" style="padding:13px 60px">Close </button> --}}
                 <img src="{{asset('default-imgs/100k-ico.png')}}"  style="height:100px; opacity:.3" />
               </center>
