@@ -56,32 +56,59 @@
     </div>
     {{-- =================================== END OF MODAL AREA ========================= --}}
   <div style="padding-top:60px;" class="vanish" id="main-div">
-    <div class="m-header"> 
+    <div class="m-header"style=""> 
       <div class="row">
-      <div class="col-md-6 col-lg-6" style="padding:0px"> 
-        <div class="brand-div vanish" style="padding-top:16%;position:relative; left:-120px"> 
-          <center>
-            <h1 class="hero-title" >100k<span style="color:orange">Challenge</span></h1>
-            <a class="plant-btn btn btn-default round-me z-depth-1" href="#scanner">Plant A Tree </a><br/>
-            <img src = "{{asset('default-imgs/100k-footer.png')}}" style="height:100px; width:100px; margin-top:30px;" />
-          </center>
+        <div class="col-md-6 col-lg-6" style="padding:0px"> 
+          <div class="brand-div vanish" style="padding-top:16%;position:relative; left:-120px"> 
+            <center>
+              <h1 class="hero-title" >100k<span style="color:orange">Challenge</span></h1>
+              <a class="plant-btn btn btn-default round-me z-depth-1" href="#scanner">Plant A Tree </a><br/>
+              <img src = "{{asset('default-imgs/100k-footer.png')}}" style="height:100px; width:100px; margin-top:30px;" />
+            </center>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6" > 
+          <div class="tree-group vanish tree-phone-margin"  > 
+            <img src = "{{asset('default-imgs/f-2.jpg')}}"class = "phone-vanish" style="height:57vh; width:109%;margin-left:-15px;object-fit:cover;"/>
+            {{-- <img src="{{asset('default-imgs/Tree-comp.png')}}"  class="tree tree-1" />
+            <img src="{{asset('default-imgs/Tree-comp.png')}}"  class="tree tree-6 phone-vanish" />
+            <img src="{{asset('default-imgs/Tree-comp.png')}}"  class="tree tree-2" />
+            <img src="{{asset('default-imgs/Tree-comp.png')}}"  class="tree tree-3 phone-vanish" />
+            <img src="{{asset('default-imgs/Tree-comp.png')}}"  class="tree tree-4" />
+            <img src="{{asset('default-imgs/Tree-comp.png')}}"  class="tree tree-5" />
+            <img src="{{asset('default-imgs/Tree-comp.png')}}"  class="tree tree-7" />
+            <img src="{{asset('default-imgs/Tree-comp.png')}}"  class="tree tree-8" />
+            <img src="{{asset('default-imgs/Tree-comp.png')}}"  class="tree tree-9" /> --}}
+          </div>
+          
         </div>
       </div>
-      <div class="col-md-6 col-lg-6" style="padding:0px"> 
-        <div class="tree-group vanish tree-phone-margin"> 
-          <img src="{{asset('default-imgs/Tree-comp.png')}}"  class="tree tree-1" />
-          <img src="{{asset('default-imgs/Tree-comp.png')}}"  class="tree tree-6 phone-vanish" />
-          <img src="{{asset('default-imgs/Tree-comp.png')}}"  class="tree tree-2" />
-          <img src="{{asset('default-imgs/Tree-comp.png')}}"  class="tree tree-3 phone-vanish" />
-          <img src="{{asset('default-imgs/Tree-comp.png')}}"  class="tree tree-4" />
-          <img src="{{asset('default-imgs/Tree-comp.png')}}"  class="tree tree-5" />
-          <img src="{{asset('default-imgs/Tree-comp.png')}}"  class="tree tree-7" />
-          <img src="{{asset('default-imgs/Tree-comp.png')}}"  class="tree tree-8" />
-          <img src="{{asset('default-imgs/Tree-comp.png')}}"  class="tree tree-9" />
+    {{-- <div class="m-header"> 
+      <div class="row">
+        <div class="col-md-6 col-lg-6" style="padding:0px"> 
+          <div class="brand-div vanish" style="padding-top:16%;position:relative; left:-120px"> 
+            <center>
+              <h1 class="hero-title" >100k<span style="color:orange">Challenge</span></h1>
+              <a class="plant-btn btn btn-default round-me z-depth-1" href="#scanner">Plant A Tree </a><br/>
+              <img src = "{{asset('default-imgs/100k-footer.png')}}" style="height:100px; width:100px; margin-top:30px;" />
+            </center>
+          </div>
         </div>
-        
-      </div>
-    </div>
+        <div class="col-md-6 col-lg-6" style="padding:0px"> 
+          <div class="tree-group vanish tree-phone-margin"> 
+            <img src="{{asset('default-imgs/Tree-comp.png')}}"  class="tree tree-1" />
+            <img src="{{asset('default-imgs/Tree-comp.png')}}"  class="tree tree-6 phone-vanish" />
+            <img src="{{asset('default-imgs/Tree-comp.png')}}"  class="tree tree-2" />
+            <img src="{{asset('default-imgs/Tree-comp.png')}}"  class="tree tree-3 phone-vanish" />
+            <img src="{{asset('default-imgs/Tree-comp.png')}}"  class="tree tree-4" />
+            <img src="{{asset('default-imgs/Tree-comp.png')}}"  class="tree tree-5" />
+            <img src="{{asset('default-imgs/Tree-comp.png')}}"  class="tree tree-7" />
+            <img src="{{asset('default-imgs/Tree-comp.png')}}"  class="tree tree-8" />
+            <img src="{{asset('default-imgs/Tree-comp.png')}}"  class="tree tree-9" />
+          </div>
+          
+        </div>
+      </div> --}}
     </div>
     <div class="sponsorship phone-vanish" id="sponsor-anchor">
       
@@ -108,33 +135,14 @@
     </div>
     <div class="about phone-about-fix" > 
       <h1 style="text-align: center; color:#929090; margin-top:20px;">About 100kChallenge</h1>
-      <p class="about-text"> The 100K Legacy Challenge is a moonshot sustainability challenge created to foster synergy
-between the Mauritian Government, the private sector, the general public and the expat
-community in Mauritius, to collectively make history by planting 100,000 trees within 6 hours .<br/><br/>
-The challenge is a creation by a group of students from the African Leadership University and is
-    inspired by the Forest Landscape Restoration initiative (FLR) that has been taken up on a global
-    scale. FLR has proven to be the quickest, easiest and cheapest way to mitigating climate change
-    and integrating multiple climatic objectives including those aligned with reducing emissions from
-    deforestation, facilitating sustainable rural development and unlocking climate-smart private sector
-    investments.<br/><br/>
-    Through this challenge, we hope to promote and inspire a “green-conscious” culture within the
-    country, and to qualify Mauritius to officially participate in the AFR100 (African Forest Landscape
-    Restoration) Initiative and the Bonn Challenge . The AFR100 is a country-led effort to bring 100
-    million hectares of land in Africa into restoration by 2030. The Bonn Challenge is a global effort to
-    restore 150 million hectares of the world's degraded and deforested lands by 2020, and 350 million
-    hectares by 2030.<br/><br/>
-   
-    Pursuant to the 17th goal in the UN Sustainable Development Goals - to strengthen the means of
-    implementation and revitalize the global partnership for sustainable development , the 100k
-    Challenge team is partnering with various Ministries and departments within the Government of
-    Mauritius, as well as with Corporates, Universities, tree nurseries, local youth groups and the
-    general public. Making this commitment will not only contribute to achieving ecological restoration
-    on the island, it will also signal exemplary leadership on regaining ecological integrity.<br/><br/>
-    Both Ethiopia and India have in the past broken world records by each planting 353 and 66 million
-    trees in 12 hours , respectively. <span id="scanner"></span>We need YOU to join us so we can achieve the 100,000 trees within
-    6 hours goal, for Mauritius. You can get in touch with us using the contact information below to find
-    out how we plan to achieve this seemingly impossible but very achievable goal, with your help.
-    #alemoris!
+      <p class="about-text"> The 100K Legacy Challenge is a moonshot sustainability challenge created to foster synergy between the Mauritian Government, the Private sector and the General public, for a common goal of giving back to the environment. The aim of the challenge is to raise awareness on environmental sustainability by planting and ensuring the survival of at least 100,000 indigenous tree species across Mauritius, over a period of 10 years from 2020.
+
+        <br/><br/>
+        The challenge is a creation by students from the  <a href="https://www.alueducation.com/">African Leadership University (ALU)</a> and is inspired by the Forest Landscape Restoration initiative (FLR) that has been taken up on a global scale. FLR has proven to be the quickest, easiest and cheapest way to mitigating climate change and integrating multiple climatic objectives including those aligned with reducing emissions from deforestation, facilitating sustainable rural development and unlocking climate-smart private sector investments.
+        <br/><br/>
+        The team has developed innovative software that allows automatic mapping of the planting process for easier tracking and maintenance (weeding, watering, etc) of the planted trees. Every tree planted will be geo-tagged and spontaneously assigned an identity, and a guardian (the planter). The objective of the guardianship is to encourage care commitment and to ensure a higher survival rate of the tree species.
+        <br/>
+        Pursuant to goal 17 of the United Nations’ Sustainable Development Goals; to strengthen the means of implementation and revitalize the global partnership for sustainable development, the team is partnering with Corporations, Non-Governmental Organizations, local youth groups, the general public and various departments of the Mauritian Government, to achieve the project‘s vision.
     
       </p>
       
@@ -154,8 +162,9 @@ The challenge is a creation by a group of students from the African Leadership U
                 @guest
                    <div class="my-card phone-scanner-height z-depth-1 popout">
                     <img src="{{asset('default-imgs/Qr-3.png')}}" class="dummy-code"/><br/>
-                    <a class="phone-vanish btn btn-danger  my-depth-1 btn-finish round-me" href="/login/google">Login With <i class="fa fa-google"></i>oogle To Scan</a>
-                    <a style=" width:260px;" class="my-depth-1 phone-vanish btn btn-default round-me subscribe-button  btn-finish" href="/login">Login With A 100k Account To Scan</a>
+                    <a class="phone-vanish btn btn-danger  my-depth-1  round-me" href="/login/google"><i style="font-size:40px; padding:2px 0px" class="fa fa-google"></i></a>
+                    <a  class="my-depth-1 phone-vanish btn btn-default round-me subscribe-button  " href="/login"><img src ="{{asset('default-imgs/100k-footer.png')}}" style="height:43px; padding:5px 0px; border-radius:100%; " /></a>
+                   <br/> <br/><small>Login with <b>Google</b> or your <b>100k</b> account to scan </small>
                     
                     <small class="pc-vanish">Login With </small></br>
                     <a class="pc-vanish btn btn-danger round-me " href="/login/google"><i class="fa fa-google"></i></a>

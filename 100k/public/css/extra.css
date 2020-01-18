@@ -2,6 +2,7 @@
 /* =========MOBILE PHONE AREA ========= */
 
 @media only screen and ( max-width: 785px){
+  
   .tree-2{
     bottom:10px;
     left:220px;
@@ -17,7 +18,8 @@
     margin-top:220px;
   }
   .phone-about-fix{
-    margin-top:315px;
+    /* margin-top:315px; */
+      margin-top:75px;
   }
   .about-text{
     padding: 10px 7px 10px 30px !important;
@@ -410,7 +412,7 @@
 .about-text{
   font-size:21px;
   color:#a09e9e;
-  padding:20px 180px 20px 180px;
+  padding:20px 180px 100px 180px;
   text-align: justify;
 
 

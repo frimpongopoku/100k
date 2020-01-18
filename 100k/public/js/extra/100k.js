@@ -11,18 +11,18 @@ const plotMarker=   function(lat,long,owner,thumbnail,other){
   var position =  new google.maps.LatLng({lat: lat, lng:long});
   var icon = {
     url: thumbnail, 
-    labelOrigin: new google.maps.Point(0,39)
+    labelOrigin: new google.maps.Point(0,-39)
   }
   var label = { 
     text:owner, 
-    color:other?'green' : 'red', 
+    color:other?'#3bb62b' : 'red', 
     fontSize:'13px', 
     fontWeight:'800'
   }
 
   const marker = new google.maps.Marker({
     position: position, 
-    icon:icon, 
+    // icon:icon, 
     animation:google.maps.Animation.DROP,
     label:label
   }); 
