@@ -1,6 +1,15 @@
 @extends('layouts.theme') 
 
 @section('content')
+{{-- ============NEW THEME ======================== --}}
+<div class="container" style="margin-left:160px; margin-right:160px;"> 
+  <div class="row"> 
+    <div class="col-lg-6 col-md-6"> 
+      <h1 class="tagline">Planting Trees And Making History Is More Fun When Everyone Is Involved</h1>
+      <p class="under-tagline">Be one of a thousands that pledged to plant a tree on March 7th 2020</p>
+    </div>
+  </div>
+</div>
 {{-- ================SIDE COUNTER ======================= --}}
   <div class="side-counter z-depth-2"> 
     <h2 id="counter" style="text-shadow: 0px 1px 2px black; color:#a30aa3;"></h2>
@@ -55,12 +64,12 @@
       <div class="s-modal-overlay"></div>
     </div>
     {{-- =================================== END OF MODAL AREA ========================= --}}
-  <div style="padding-top:60px;" class="vanish" id="main-div">
+  <div style="padding-top:60px;" class="vanish" id="main-div" >
     
 
     
     {{-- ---------------SPONSORSHIP PHOTOS -------------------------- --}}
-    <div class="sponsorship phone-vanish" id="sponsor-anchor" style="margin-top:300px;">
+    <div class="sponsorship phone-vanish" id="sponsor-anchor">
       
       <div class="row">
           {{-- <div class="col-md-4 invisible">
@@ -160,34 +169,16 @@
         
       </center>
     </div>
-    <div class="footer phone-vanish"> 
-      <div class="row"> 
-          <div class="col-md-6 col-lg-6 " style="display:inherit"> 
-            <img style="height:130px; margin:30px" src="{{asset('default-imgs/100k-footer.png')}}"/>
-            <div style="margin:35px;margin-top:70px;">
-              <button class="btn btn-default round-me m-social" style="background:blue; color:white;"><i class="fa fa-facebook"></i></button>
-              <button class="btn btn-default round-me m-social" style="background:white"><i class="fa fa-instagram"></i></button>
-              <button class="btn btn-default round-me m-social" style="background:#00a1ff; color:white;"><i class="fa fa-twitter"></i></button>
-              <p style="margin-top:5px; color:lightgray">Follow Us On Social Media </p>
-            </div>
-            <div style="white-space:nowrap; margin-top:30px;"> 
-              <h4 style="color:white;">QUICK LINKS</h5> 
-                <a href="/register" class="footer-a">Create A <b>100KChallenge</b> Account </a><br/>
-                <a href="/login" class="footer-a">Login</a><br/>
-                <a href="#map-anchor" class="footer-a">See Your Trees</a><br/>
-                <a href="#sponsor-anchor" class="footer-a">Sponsors</a><br/>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-6 "> 
-            <center> 
-              <h2 style="color:#b7b4b4; margin-top:15px;">Subscribe</h2> 
-              <p style="color:#908d8d">Leave your email with us for updates <br/>on the latest comings of <b>100kChallenge</b></p>
-              <form method="GET" action="{{route('subscribe')}}">
-                <input type="email" style="margin:10px; margin-top:-5px; width:81%;display:inline-block;  padding:20px;"type="email" placeholder="email" name="email" class="form-control round-me" required/> 
-                <input type="submit" class="btn btn-default btn-finish subscribe-button round-me" value="Subscribe" ><br/>
-              </form>
-            </center>
-          </div>
+    <div class="" style="background:white"> 
+      <center> 
+        <img style="height:130px; margin:30px" src="{{asset('default-imgs/100k-footer.png')}}"/>
+        <div style="display:inline-block"> 
+          <a href="#" class="nav-anchors">Sign In</a> <br/>
+            <a href="#" class="nav-anchors">Create Account</a><br/>
+            <a href="#" class="nav-anchors">Contact Us</a>
+        </div>
+      </center>
+
       </div>
     </div>
     
