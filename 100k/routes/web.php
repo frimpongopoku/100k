@@ -16,7 +16,7 @@ Route::get('login/google', 'Auth\LoginController@redirectToProvider');
 Route::get('login/google/callback', 'Auth\LoginController@handleProviderCallback');
 //---------
 Route::get('/', function () {
-    return view('welcome');
+    return view('new-theme');
 });
 
 Auth::routes();

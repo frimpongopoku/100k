@@ -22,7 +22,7 @@ const plotMarker=   function(lat,long,owner,thumbnail,other){
 
   const marker = new google.maps.Marker({
     position: position, 
-    // icon:icon, 
+    // icon:icon, // was former a custom marker. but now default
     animation:google.maps.Animation.DROP,
     label:label
   }); 

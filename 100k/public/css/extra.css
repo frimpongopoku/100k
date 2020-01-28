@@ -1,4 +1,37 @@
 
+.theme-nav{
+  width:100%; 
+  padding:35px; 
+  position:fixed; 
+  top:0px;
+}
+
+.right-components{
+  float:right; 
+  clear:both;
+  margin:50px 150px;
+}
+
+.nav-anchors{
+  font-weight: 500;
+  font-size:22px; 
+  margin:8px;
+  text-decoration: none !important;
+  color:#b2afaf;
+  cursor: pointer;
+}
+.nav-anchors:hover{
+  color:black; 
+  border:solid 0px #28BE55;
+  transition: .1s ease-out;
+  border-bottom-width:3px; 
+}
+
+
+
+
+
+
 /* =========MOBILE PHONE AREA ========= */
 
 @media only screen and ( max-width: 785px){
