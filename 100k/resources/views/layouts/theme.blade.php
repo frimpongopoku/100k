@@ -12,6 +12,8 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script type="module" src="{{asset('js/extra/Scanner.js')}}" defer></script>
+    <script type="module" src="{{asset('js/extra/100k.js')}}" defer></script>
     <script src="{{ asset('js/extra/anime.js') }}" defer></script>
 
     <!-- Fonts -->
@@ -23,6 +25,7 @@
     <link href="{{ asset('css/extra.css') }}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Google+Sans:200,300,400,500,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,700,800,900" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 </head>
 
@@ -34,11 +37,18 @@
 <body>
     <div id="app">
       <div class="theme-nav"> 
-          <img src="{{asset('default-imgs/100k-ico.png')}}" style="width:400px;margin-left:150px;" />
+          <img src="{{asset('default-imgs/good-logo.png')}}" style="width:400px;margin-left:240px;" />
+          @guest
+            <div class="right-components"> 
+              <a href="/login" class="nav-anchors">Sign In</a> 
+              <a href="/register" class="nav-anchors">Create Account</a> 
+            </div>
+          @else
           <div class="right-components"> 
-            <a href="#" class="nav-anchors">Sign In</a> 
-            <a href="#" class="nav-anchors">Create Account</a> 
-          </div>
+             <a href="#" class="nav-anchors">{{Auth::user()->name}}</a> 
+          <br/><small style="color:#d6d3d3; margin-left:20px;">Click to logout </small>
+            </div>
+          @endguest
       </div>
         {{-- <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
@@ -97,5 +107,7 @@
     </div>
   
     @yield('custom-js')
+    <script src="https://maps.googleapis.com/maps/api/js?key={{env('GOOGLE_API_KEY')}}&callback=initMap"
+    async defer></script>
 </body>
 </html>

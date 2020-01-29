@@ -58,9 +58,9 @@
     {{-- =================================== END OF MODAL AREA ========================= --}}
   <div style="" class="vanish" id="main-div" >
     {{-- ============NEW THEME ======================== --}}
-    <div class="container" style="margin-left:160px; margin-right:160px;background:white;"> 
+    <div class="container" style="margin-left:16%; margin-right:160px;background:white;"> 
       <div class="row"> 
-        <div class="col-lg-6 col-md-6"> 
+        <div class="col-lg-6 col-md-6 col-md-3"> 
           <h1 class="tagline">Planting Trees And Making History Is More Fun When Everyone Is Involved</h1>
           <p class="under-tagline">Be one of a thousands that pledged to plant a tree on March 7th 2020</p>
         </div>
@@ -96,6 +96,7 @@
         
     </div>
 
+    
     <div class="row"> 
       <div class="col-lg-4 col-md-4"> 
         <img style="height:300px; margin:30px; margin-left:10px;" src="{{asset('default-imgs/2.svg')}}" />
@@ -124,6 +125,7 @@
         </center>
      </div>
     </div>
+  
 
   </div>
   {{-- END OF NEW THEME --}}
@@ -206,11 +208,16 @@
     </div>
     <div class="" style="background:white"> 
       <center> 
-        <img style="height:130px; margin:30px" src="{{asset('default-imgs/100k-footer.png')}}"/>
+        <img style="height:130px; margin:30px;margin-top:-40px;" src="{{asset('default-imgs/100k-footer.png')}}"/>
         <div style="display:inline-block"> 
-          <a href="#" class="nav-anchors">Sign In</a> <br/>
-            <a href="#" class="nav-anchors">Create Account</a><br/>
-            <a href="#" class="nav-anchors">Contact Us</a>
+          <a href="/login" class="nav-anchors">Sign In</a> <br/>
+            <a href="/register" class="nav-anchors">Create Account</a><br/>
+            <a href="https://www.facebook.com/100klegacychallenge/?modal=admin_todo_tour" class="nav-anchors">Contact Us</a>
+        </div>
+        <div style="display:inline-block"> 
+          <a target="_blank" href="https://www.facebook.com/100klegacychallenge/?modal=admin_todo_tour" class="nav-anchors">Facebook</a> <br/>
+            <a target="_blank" href="https://twitter.com/100KChallenge1" class="nav-anchors">Twitter</a><br/>
+            <a target="_blank" href="https://www.linkedin.com/company/100k-challenge/about/?viewAsMember=true" class="nav-anchors">Linked In</a>
         </div>
       </center>
 

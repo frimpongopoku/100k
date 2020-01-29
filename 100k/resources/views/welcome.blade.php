@@ -18,7 +18,7 @@
             <div id="sorry" class="unseen">
               <center> 
                 <h1 style="color:#f0625e"><i class="fa fa-exclamation-circle "></i> Sorry, tree already owned! </h1>
-                <p class="m-gray">This tree already belongs to <span><i class="fa fa-verified-user"></i> <b> <span id="owned-name">Frimpong Opoku Agyemang</span></b> </span><br/> 
+                <p class="m-gray">This tree already belongs to <span><i class="fa fa-verified-user"></i> <b> <span id="owned-name">...</span></b> </span><br/> 
                   please scan another tree.
                 </p>
                 <img src="{{asset('default-imgs/sad-tree.png')}}"  style="height:100px; opacity:.8" /><br/>

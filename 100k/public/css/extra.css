@@ -26,7 +26,10 @@
 .right-components{
   float:right; 
   clear:both;
-  margin:50px 150px;
+  margin:50px 310px;
+  position: absolute;
+  right:50px; 
+  top:18px;
 }
 
 .nav-anchors{
@@ -36,6 +39,7 @@
   text-decoration: none !important;
   color:#b2afaf;
   cursor: pointer;
+  
 }
 .nav-anchors:hover{
   color:black; 
