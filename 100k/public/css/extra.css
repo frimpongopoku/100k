@@ -1,8 +1,16 @@
 
+
+.col-title{
+  font-size:43px; 
+  font-weight:700;
+  margin-top:69px;
+  text-transform: capitalize;
+}
 .theme-nav{
   width:100%; 
   padding:15px;
   top:0px;
+  background:white;
 }
 .tagline{
   font-size:3.25rem;
@@ -10,7 +18,7 @@
   font-weight:700;
 }
 .under-tagline{
-  font-size:24px; 
+  font-size:26px; 
   font-weight: 400;
   font-family: Raleway, sans-serif;
 }
@@ -35,6 +43,7 @@
   transition: .1s ease-out;
   border-bottom-width:3px; 
 }
+
 
 
 
@@ -428,13 +437,17 @@
 
 }
 .scanner-container{
-  background:#9289db; 
+  /* background:#9289db;  */
+  background:white;
   height:50vh; 
   width:100%;
 }
 .banner-text{
-  color:white;
+  color:black;
   text-align: center;
+  font-size: 55px;
+    font-family: Raleway;
+    font-weight: 700;
 }
 
 .other-sponsors{
@@ -447,7 +460,8 @@
 }
 
 .banner{
-  background:#3A166A; 
+  /* background:#3A166A;  */
+  background:white;
   padding:40px;
   width:100%;
 }
@@ -469,10 +483,11 @@
 }
 
 .sponsorship{
-  opacity:.4;
+  opacity:1s;
   padding:30px; 
   width:100%; 
-  background:#ebe8e8;
+  /* background:#ebe8e8; */
+  background:white;
 }
 
 .unseen{

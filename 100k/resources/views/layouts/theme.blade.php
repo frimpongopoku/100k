@@ -26,7 +26,11 @@
 
 </head>
 
-
+<style> 
+  body{
+    background:white !important;
+  }
+</style>
 <body>
     <div id="app">
       <div class="theme-nav"> 

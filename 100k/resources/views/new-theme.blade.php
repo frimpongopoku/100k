@@ -1,15 +1,7 @@
 @extends('layouts.theme') 
 
 @section('content')
-{{-- ============NEW THEME ======================== --}}
-<div class="container" style="margin-left:160px; margin-right:160px;"> 
-  <div class="row"> 
-    <div class="col-lg-6 col-md-6"> 
-      <h1 class="tagline">Planting Trees And Making History Is More Fun When Everyone Is Involved</h1>
-      <p class="under-tagline">Be one of a thousands that pledged to plant a tree on March 7th 2020</p>
-    </div>
-  </div>
-</div>
+
 {{-- ================SIDE COUNTER ======================= --}}
   <div class="side-counter z-depth-2"> 
     <h2 id="counter" style="text-shadow: 0px 1px 2px black; color:#a30aa3;"></h2>
@@ -64,8 +56,19 @@
       <div class="s-modal-overlay"></div>
     </div>
     {{-- =================================== END OF MODAL AREA ========================= --}}
-  <div style="padding-top:60px;" class="vanish" id="main-div" >
-    
+  <div style="" class="vanish" id="main-div" >
+    {{-- ============NEW THEME ======================== --}}
+    <div class="container" style="margin-left:160px; margin-right:160px;background:white;"> 
+      <div class="row"> 
+        <div class="col-lg-6 col-md-6"> 
+          <h1 class="tagline">Planting Trees And Making History Is More Fun When Everyone Is Involved</h1>
+          <p class="under-tagline">Be one of a thousands that pledged to plant a tree on March 7th 2020</p>
+        </div>
+        <div class="col-lg-6 col-md-6"> 
+          <img style="height:300px; margin:30px; margin-left:120px;" src="{{asset('default-imgs/1.svg')}}" />
+        </div>
+      </div>
+   
 
     
     {{-- ---------------SPONSORSHIP PHOTOS -------------------------- --}}
@@ -92,6 +95,38 @@
         </div>
         
     </div>
+
+    <div class="row"> 
+      <div class="col-lg-4 col-md-4"> 
+        <img style="height:300px; margin:30px; margin-left:10px;" src="{{asset('default-imgs/2.svg')}}" />
+      </div>
+      <div class="col-lg-8 col-md-8"> 
+        <h3 class="col-title">The making of history </h3>
+          <p class="under-tagline" style=" margin-right:100px;">The 100K Legacy Challenge is a moonshot sustainability challenge created to foster synergy between the Mauritian Government, the private sector, the general public and the expat community</p>
+      </div>
+      <div class="col-lg-8 col-md-8"> 
+        <h3 class="col-title">Forest Landscape Restoration initiative (FLR) inspired</h3>
+          <p class="under-tagline" style=" margin-right:100px;">FLR has proven to be the quickest, easiest and cheapest way to mitigate multiple climatic objectives including those aligned with reducing emissions from deforestation, facilitating sustainable rural development and unlocking climate-smart private sector investments</p>
+      </div>
+      <div class="col-lg-4 col-md-4"> 
+        <img style="height:300px; margin:30px; margin-left:10px;" src="{{asset('default-imgs/3.svg')}}" />
+      </div>
+      <div class="col-lg-4 col-md-4"> 
+        <img style="height:300px; margin:30px; margin-left:10px;" src="{{asset('default-imgs/4.svg')}}" />
+      </div>
+      <div class="col-lg-8 col-md-8"> 
+        <h3 class="col-title">Promote and inspire a “green-conscious” culture</h3>
+          <p class="under-tagline" style=" margin-right:100px;">Qualify Mauritius to officially participate in the AFR100 (African Forest Landscape Restoration) Initiative and the Bonn Challenge</p>
+      </div>
+      <div style="margin-left:100px; margin-right:100px;margin-bottom:80px;">
+        <center> 
+          <p class="under-tagline">Making this commitment will not only contribute to achieving ecological restoration on the island, it will also signal exemplary leadership on regaining ecological integrity.</p>
+        </center>
+     </div>
+    </div>
+
+  </div>
+  {{-- END OF NEW THEME --}}
 
 
     {{-- -------------------------------------------------------------------------------------------------- --}}
@@ -137,7 +172,7 @@
     </div>
     {{--  ----------MAPS AREA --------------- --}}
     
-    <div class="maps-area phone-width" style="background:lightgray;height:850px;"> 
+    <div class="maps-area phone-width" style="background:white;height:850px;"> 
       <div class="banner">
         <h1 class="banner-text">FIND YOUR TREES ON THE MAP </h1>
       </div>
