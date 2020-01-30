@@ -65,7 +65,7 @@
           <p class="under-tagline">Be one of a thousands that pledged to plant a tree on March 7th 2020</p>
         </div>
         <div class="col-lg-6 col-md-6"> 
-          <img style="height:300px; margin:30px; margin-left:120px;" src="{{asset('default-imgs/1.svg')}}" />
+          <img class="first-tree" src="{{asset('default-imgs/1.svg')}}" />
         </div>
       </div>
    
@@ -103,11 +103,11 @@
       </div>
       <div class="col-lg-8 col-md-8"> 
         <h3 class="col-title">The making of history </h3>
-          <p class="under-tagline" style=" margin-right:100px;">The 100K Legacy Challenge is a moonshot sustainability challenge created to foster synergy between the Mauritian Government, the private sector, the general public and the expat community</p>
+          <p class="under-tagline col-pc-margin" >The 100K Legacy Challenge is a moonshot sustainability challenge created to foster synergy between the Mauritian Government, the private sector, the general public and the expat community</p>
       </div>
       <div class="col-lg-8 col-md-8"> 
         <h3 class="col-title">Forest Landscape Restoration initiative (FLR) inspired</h3>
-          <p class="under-tagline" style=" margin-right:100px;">FLR has proven to be the quickest, easiest and cheapest way to mitigate multiple climatic objectives including those aligned with reducing emissions from deforestation, facilitating sustainable rural development and unlocking climate-smart private sector investments</p>
+          <p class="under-tagline col-pc-margin" >FLR has proven to be the quickest, easiest and cheapest way to mitigate multiple climatic objectives including those aligned with reducing emissions from deforestation, facilitating sustainable rural development and unlocking climate-smart private sector investments</p>
       </div>
       <div class="col-lg-4 col-md-4"> 
         <img style="height:300px; margin:30px; margin-left:10px;" src="{{asset('default-imgs/3.svg')}}" />
@@ -117,12 +117,12 @@
       </div>
       <div class="col-lg-8 col-md-8"> 
         <h3 class="col-title">Promote and inspire a “green-conscious” culture</h3>
-          <p class="under-tagline" style=" margin-right:100px;">Qualify Mauritius to officially participate in the AFR100 (African Forest Landscape Restoration) Initiative and the Bonn Challenge</p>
+          <p class="under-tagline col-pc-margin" >Qualify Mauritius to officially participate in the AFR100 (African Forest Landscape Restoration) Initiative and the Bonn Challenge</p>
       </div>
-      <div style="margin-left:100px; margin-right:100px;margin-bottom:80px;">
-        <center> 
-          <p class="under-tagline">Making this commitment will not only contribute to achieving ecological restoration on the island, it will also signal exemplary leadership on regaining ecological integrity.</p>
-        </center>
+      <div class="last-para">
+     
+          <p class="under-tagline col-pc-margin">Making this commitment will not only contribute to achieving ecological restoration on the island, it will also signal exemplary leadership on regaining ecological integrity.</p>
+
      </div>
     </div>
   
@@ -149,7 +149,7 @@
                     <img src="{{asset('default-imgs/Qr-3.png')}}" class="dummy-code"/><br/>
                     <a class="phone-vanish btn btn-danger  my-depth-1  round-me" href="/login/google"><i style="font-size:40px; padding:2px 0px" class="fa fa-google"></i></a>
                     <a  class="my-depth-1 phone-vanish btn btn-default round-me subscribe-button  " href="/login"><img src ="{{asset('default-imgs/100k-footer.png')}}" style="height:43px; padding:5px 0px; border-radius:100%; " /></a>
-                   <br/> <br/><small>Login with <b>Google</b> or your <b>100k</b> account to scan </small>
+                   <small style="display: block;margin-top:10px;">Login with <b>Google</b> or your <b>100k</b> account to scan </small>
                     
                     <small class="pc-vanish">Login With </small></br>
                     <a class="pc-vanish btn btn-danger round-me " href="/login/google"><i class="fa fa-google"></i></a>
@@ -190,7 +190,7 @@
     </div>
 
     {{-- ------FOOTER AREA -------- --}}
-    <div class="pc-vanish phone-footer phone-width" style="padding-top:20px;">
+    {{-- <div class="pc-vanish phone-footer phone-width" style="padding-top:20px;">
       <center> 
         <small style="color:#887d9f;font-size:115%">Receive weekly updates from us!</small>
         <form method="GET" action="{{route('subscribe')}}">
@@ -205,16 +205,16 @@
         </div>
         
       </center>
-    </div>
-    <div class="" style="background:white"> 
+    </div> --}}
+    <div class="" style="background:white;margin-top:120px;"> 
       <center> 
-        <img style="height:130px; margin:30px;margin-top:-40px;" src="{{asset('default-imgs/100k-footer.png')}}"/>
+        <img style="height:130px; margin:30px;margin-top:-40px;" class="foot-tree-fix" src="{{asset('default-imgs/100k-footer.png')}}"/>
         <div style="display:inline-block"> 
           <a href="/login" class="nav-anchors">Sign In</a> <br/>
             <a href="/register" class="nav-anchors">Create Account</a><br/>
             <a href="https://www.facebook.com/100klegacychallenge/?modal=admin_todo_tour" class="nav-anchors">Contact Us</a>
         </div>
-        <div style="display:inline-block"> 
+        <div style="display:inline-block " class="foot-phone-fix"> 
           <a target="_blank" href="https://www.facebook.com/100klegacychallenge/?modal=admin_todo_tour" class="nav-anchors">Facebook</a> <br/>
             <a target="_blank" href="https://twitter.com/100KChallenge1" class="nav-anchors">Twitter</a><br/>
             <a target="_blank" href="https://www.linkedin.com/company/100k-challenge/about/?viewAsMember=true" class="nav-anchors">Linked In</a>

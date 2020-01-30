@@ -1,52 +1,22 @@
 
 
-.col-title{
-  font-size:43px; 
-  font-weight:700;
-  margin-top:69px;
-  text-transform: capitalize;
-}
+
+
+
 .theme-nav{
   width:100%; 
   padding:15px;
   top:0px;
   background:white;
 }
-.tagline{
-  font-size:3.25rem;
-  font-family:Raleway, sans-serif; 
-  font-weight:700;
-}
+
 .under-tagline{
   font-size:26px; 
   font-weight: 400;
   font-family: Raleway, sans-serif;
 }
 
-.right-components{
-  float:right; 
-  clear:both;
-  margin:50px 310px;
-  position: absolute;
-  right:50px; 
-  top:18px;
-}
 
-.nav-anchors{
-  font-weight: 500;
-  font-size:22px; 
-  margin:8px;
-  text-decoration: none !important;
-  color:#b2afaf;
-  cursor: pointer;
-  
-}
-.nav-anchors:hover{
-  color:black; 
-  border:solid 0px #28BE55;
-  transition: .1s ease-out;
-  border-bottom-width:3px; 
-}
 
 
 
@@ -57,11 +27,72 @@
 /* =========MOBILE PHONE AREA ========= */
 
 @media only screen and ( max-width: 785px){
+  .foot-phone-fix{
+    margin-right:-70px;
+  }
+  .foot-tree-fix{
+    margin: -40px 1px 30px !important;
+  }
+  .banner-text{
+    color:black;
+    text-align: center;
+    font-size: 33px;
+      font-family: Raleway;
+      font-weight: 700;
+  }
+  .nav-anchors{
+    font-weight: 500;
+    font-size:18px; 
+    margin:10px;
+    text-decoration: none !important;
+    color:#b2afaf;
+    cursor: pointer;
+    
+  }
+  .nav-anchors:hover{
+    color:black; 
+    border:solid 0px #28BE55;
+    transition: .1s ease-out;
+    border-bottom-width:3px; 
+  }
+  
+  
+  .right-components{
+    float:right; 
+    clear:both;
+    margin:18px -140px;
+    position: absolute;
+    right:50px; 
+    top:18px;
+  }
+  .last-para{
+    margin:10px !important;
+  }
+  .col-title{
+    font-size:37px; 
+    font-weight:700;
+    margin-top:69px;
+    text-transform: capitalize;
+  }
+  .col-pc-margin{
+    margin:0px !important;
+  }
+  .tagline{
+    font-size:2.25rem;
+    font-family:Raleway, sans-serif; 
+    font-weight:700;
+  }
+  .first-tree{
+    height:300px; margin:10px; margin-left:0px;
+  }
   
   .tree-2{
     bottom:10px;
     left:220px;
     z-index:0;
+  }
+  .logo-css{
+    width:210px;margin-left:20px;
   }
   .phone-body-fix{
     width:480px;
@@ -225,6 +256,63 @@
     left:160px;
     z-index:0;
   }
+  .banner-text{
+    color:black;
+    text-align: center;
+    font-size: 55px;
+      font-family: Raleway;
+      font-weight: 700;
+  }
+  .nav-anchors{
+    font-weight: 500;
+    font-size:22px; 
+    margin:10px;
+    text-decoration: none !important;
+    color:#b2afaf;
+    cursor: pointer;
+    
+  }
+  .nav-anchors:hover{
+    color:black; 
+    border:solid 0px #28BE55;
+    transition: .1s ease-out;
+    border-bottom-width:3px; 
+  }
+  
+  
+  .col-title{
+    font-size:43px; 
+    font-weight:700;
+    margin-top:69px;
+    text-transform: capitalize;
+  }
+  .last-para{
+    margin-left:100px; margin-right:100px;margin-bottom:80px;
+    text-align: center;
+  }
+  .col-pc-margin{
+    margin-right:100px;
+  }
+  .tagline{
+    font-size:3.25rem;
+    font-family:Raleway, sans-serif; 
+    font-weight:700;
+  }
+  .right-components{
+    float:right; 
+    clear:both;
+    margin:50px 310px;
+    position: absolute;
+    right:50px; 
+    top:18px;
+  }
+  .first-tree{
+    height:300px; margin:30px; margin-left:120px;
+  }
+  
+  .logo-css{
+    width:400px;margin-left:240px;
+  }
   .tree-info{
     border:solid 2px #f0eeee; 
     padding:10px 20px; 
@@ -314,7 +402,7 @@
 .phone-body-fix{}
 .tree-phone-margin{}
 .phone-about-fix{}
-
+.foot-tree-fix{}
 /* --------------------------- */
 
 .s-modal-overlay{
@@ -445,13 +533,6 @@
   background:white;
   height:50vh; 
   width:100%;
-}
-.banner-text{
-  color:black;
-  text-align: center;
-  font-size: 55px;
-    font-family: Raleway;
-    font-weight: 700;
 }
 
 .other-sponsors{

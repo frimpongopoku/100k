@@ -37,7 +37,7 @@
 <body>
     <div id="app">
       <div class="theme-nav"> 
-          <img src="{{asset('default-imgs/good-logo.png')}}" style="width:400px;margin-left:240px;" />
+          <img src="{{asset('default-imgs/good-logo.png')}}" class="logo-css" style="" />
           @guest
             <div class="right-components"> 
               <a href="/login" class="nav-anchors">Sign In</a> 
@@ -45,10 +45,14 @@
             </div>
           @else
           <div class="right-components"> 
-             <a href="#" class="nav-anchors">{{Auth::user()->name}}</a> 
+             <a href="#" onclick="event.preventDefault();
+             document.getElementById('logout-form').submit();" class="nav-anchors">{{Auth::user()->name}}</a> 
           <br/><small style="color:#d6d3d3; margin-left:20px;">Click to logout </small>
             </div>
           @endguest
+          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+            @csrf
+        </form>
       </div>
         {{-- <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
