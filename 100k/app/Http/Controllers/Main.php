@@ -14,6 +14,10 @@ class Main extends Controller
 
 
 
+
+  function policy(){
+    return view('policy');
+  }
   function subscribe(Request $request){
     $email = $request->email;
     if($email){

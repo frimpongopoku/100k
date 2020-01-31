@@ -17,7 +17,17 @@
 }
 
 
+.fb{
+  background-color: #3b5998;
+  border-color:#3b5998;
+  padding:6px 17px;
+}
 
+.fb:hover{
+  background:#172238; 
+  border-color: #172238;
+  transition: .3s ease-in-out;
+}
 
 
 

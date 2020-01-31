@@ -12,8 +12,8 @@
 */
 
 //OAUTH 
-Route::get('login/google', 'Auth\LoginController@redirectToProvider');
-Route::get('login/google/callback', 'Auth\LoginController@handleProviderCallback');
+Route::get('login/{auth}', 'Auth\LoginController@redirectToProvider');
+Route::get('login/{auth}/callback', 'Auth\LoginController@handleProviderCallback');
 //---------
 Route::get('/', function () {
     return view('new-theme');
@@ -32,3 +32,4 @@ Route::get('/home',function(){
   return view('new-theme');
 });
 Route::get('subscribe','Main@subscribe')->name('subscribe');
+Route::get('policy','Main@policy');

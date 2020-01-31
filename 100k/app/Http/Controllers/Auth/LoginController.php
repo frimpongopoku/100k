@@ -39,9 +39,14 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
-    public function redirectToProvider()
+    public function redirectToProvider($auth)
     {
+      if($auth =="google"){
         return Socialite::driver('google')->redirect();
+      }
+      elseif ($auth =="facebook") {
+        return Socialite::driver('facebook')->redirect();
+      }
     }
 
     /**
@@ -49,21 +54,29 @@ class LoginController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function handleProviderCallback()
+    public function handleProviderCallback($auth)
     {
-        $user = Socialite::driver('google')->stateless()->user();
-        $foundUser = User::where('email',$user->getEmail())->first(); 
-        if($foundUser){
-          Auth::login($foundUser);
+      try{
+        $user = Socialite::driver($auth)->stateless()->user();
+        if(!$user->getEmail() && $auth =="facebook"){
+          return "<center><h1 style='margin-top:20%'>Sorry, could not sign in with facebook <br/> <a href='/'>Try something else</a></center>"; 
         }
-        else{
-          $newUser = new User(); 
-          $newUser->name = $user->getName(); 
-          $newUser->email = $user->getEmail(); 
-          $newUser->password = bcrypt('100kLegacy'.$user->getEmail().'@2020'); 
-          $newUser->save();
-          Auth::login($newUser);
-        }
-        return redirect('/');
+          $foundUser = User::where('email',$user->getEmail())->first(); 
+          if($foundUser){
+            Auth::login($foundUser);
+          }
+          else{
+            $newUser = new User(); 
+            $newUser->name = $user->getName(); 
+            $newUser->email = $user->getEmail(); 
+            $newUser->password = bcrypt('100kLegacy'.$user->getEmail().'@2020'); 
+            $newUser->save();
+            Auth::login($newUser);
+          }
+          return redirect('/');
+      }
+      catch(\Exception $e){
+        return "<center><h1 style='margin-top:20%'>Sorry, could not sign in with $auth <br/> <a href='/'>Try something else</a></center>";
+      }
     }
 }

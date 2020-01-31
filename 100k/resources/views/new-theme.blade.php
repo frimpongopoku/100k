@@ -4,7 +4,7 @@
 
 {{-- ================SIDE COUNTER ======================= --}}
   <div class="side-counter z-depth-2" onclick="sideCounterSpread()"> 
-    <h2 id="counter" style="display:inline;text-shadow: 0px 1px 2px black; color:#a30aa3;">5645646456</h2>
+    <h2 id="counter" style="display:inline;text-shadow: 0px 1px 2px black; color:#a30aa3;"></h2>
     <small id='side-counter-label' style="display:none;margin:5px; color:gray;">Trees Planted</small>
   </div>
 
@@ -149,11 +149,13 @@
                    <div class="my-card phone-scanner-height z-depth-1 popout">
                     <img src="{{asset('default-imgs/Qr-3.png')}}" class="dummy-code"/><br/>
                     <a class="phone-vanish btn btn-danger  my-depth-1  round-me" href="/login/google"><i style="font-size:40px; padding:2px 0px" class="fa fa-google"></i></a>
+                    <a class="phone-vanish btn btn-danger fb  my-depth-1  round-me" href="/login/facebook"><i style="font-size:40px; padding:2px 0px" class="fa fa-facebook"></i></a>
                     <a  class="my-depth-1 phone-vanish btn btn-default round-me subscribe-button  " href="/login"><img src ="{{asset('default-imgs/100k-footer.png')}}" style="height:43px; padding:5px 0px; border-radius:100%; " /></a>
-                   <small style="display: block;margin-top:10px;">Login with <b>Google</b> or your <b>100k</b> account to scan </small>
+                   <small style="display: block;margin-top:10px;">Login with <b>Google</b>,<b>facebook</b> or your <b>100k</b> account to scan </small>
                     
                     <small class="pc-vanish">Login With </small></br>
                     <a class="pc-vanish btn btn-danger round-me " href="/login/google"><i class="fa fa-google"></i></a>
+                    <a class="pc-vanish btn btn-danger round-me " href="/login/facebook" style="background:#3b5998; border-color:#3b5998"><i class="fa fa-facebook"></i></a>
                     <a style="" class="pc-vanish btn btn-default subscribe-button round-me" href="/login">100K</a>
                   </div>
                   @else  
