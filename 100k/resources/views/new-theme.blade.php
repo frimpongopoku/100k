@@ -3,8 +3,9 @@
 @section('content')
 
 {{-- ================SIDE COUNTER ======================= --}}
-  <div class="side-counter z-depth-2"> 
-    <h2 id="counter" style="text-shadow: 0px 1px 2px black; color:#a30aa3;"></h2>
+  <div class="side-counter z-depth-2" onclick="sideCounterSpread()"> 
+    <h2 id="counter" style="display:inline;text-shadow: 0px 1px 2px black; color:#a30aa3;">5645646456</h2>
+    <small id='side-counter-label' style="display:none;margin:5px; color:gray;">Trees Planted</small>
   </div>
 
 {{-- /==============================END SIDE COUNTER ========================== --}}
@@ -186,18 +187,17 @@
         </div>
         <div id="map" class="z-depth-1" style="border-radius:10px;height:500px; width:80%;margin:40px"></div>
       </center>
-     
     </div>
 
-
      {{-- ---------------PHONE SPONSORSHIP PHOTOS -------------------------- --}}
-     <div class="sponsorship pc-vanish" id="sponsor-anchor">
-      
+     <div class="sponsorship pc-vanish" id="sponsor-anchor" style="width:500px">
+     
       <div class="row">
           {{-- <div class="col-md-4 invisible">
             <h3 style="margin-top:60px; color:#8d969e;">ANOTHER COMPANY </h3>
           </div> --}}
           <div class="col-md-12">
+            
             <center>
               <img src={{asset('default-imgs/dentons.png')}} class="dentons-logo "/>
               <img src={{asset('default-imgs/sov.jpg')}} class="sov "/>

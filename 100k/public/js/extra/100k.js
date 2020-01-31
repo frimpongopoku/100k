@@ -159,6 +159,21 @@ const clearMarkerField = function(){
   });
 }
 
+const sideCounterSpread = function(){
+  const s = $('.side-counter'); 
+  const l = $('#side-counter-label'); 
+  s.animate({width:210},100);
+  setTimeout(() => {
+    l.fadeIn(50);
+  }, 200);
+  
+  setTimeout(() => {
+    l.css({display:'none'})
+    s.animate({width:110},100);
+    
+  }, 1500);
+}
+window.sideCounterSpread = sideCounterSpread;
 getTreeCount();
 getToken();
 getAuthenticatedUser();
