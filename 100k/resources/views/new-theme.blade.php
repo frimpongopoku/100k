@@ -189,6 +189,31 @@
      
     </div>
 
+
+     {{-- ---------------PHONE SPONSORSHIP PHOTOS -------------------------- --}}
+     <div class="sponsorship pc-vanish" id="sponsor-anchor">
+      
+      <div class="row">
+          {{-- <div class="col-md-4 invisible">
+            <h3 style="margin-top:60px; color:#8d969e;">ANOTHER COMPANY </h3>
+          </div> --}}
+          <div class="col-md-12">
+            <center>
+              <img src={{asset('default-imgs/dentons.png')}} class="dentons-logo "/>
+              <img src={{asset('default-imgs/sov.jpg')}} class="sov "/>
+              <img src={{asset('default-imgs/panda.png')}} class="other-sponsors "/>
+              <img src={{asset('default-imgs/not-a-number.webp')}} class="other-sponsors "/>
+            </center>
+          </div>
+          {{-- about us anchor --}}
+          <div id="about-anchor"></div>
+          {{-- ----------------- --}}
+          {{-- <div class="col-md-4 invisible">
+            <h3 style="margin-top:60px; color:#8d969e;">ANOTHER COMPANY </h3>
+          </div> --}}
+        </div>
+        
+    </div>
     {{-- ------FOOTER AREA -------- --}}
     {{-- <div class="pc-vanish phone-footer phone-width" style="padding-top:20px;">
       <center> 
@@ -234,7 +259,8 @@
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 5.625505899999999, lng:-0.2945928},
+          center: {lat: -20.102726399999998
+, lng:57.562135},
           zoom: 10
         });
         window.map = map;

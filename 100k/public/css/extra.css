@@ -27,6 +27,11 @@
 /* =========MOBILE PHONE AREA ========= */
 
 @media only screen and ( max-width: 785px){
+  .other-sponsors{
+    height:84; 
+    width:210px;
+    margin:20px;
+  }
   .foot-phone-fix{
     margin-right:-70px;
   }
@@ -60,7 +65,7 @@
   .right-components{
     float:right; 
     clear:both;
-    margin:18px -140px;
+    margin:20px -140px;
     position: absolute;
     right:50px; 
     top:18px;
@@ -228,6 +233,32 @@
   }
   .phone-scanner-height{
     height:39vh !important;
+  }
+
+}
+/* ----------- IPHONE 11 && its likes --------- */
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) {
+/* @media only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {  */
+
+  .video{
+    left: 8%;
+    position: absolute;
+    margin-top: 40px;
+    height: 26vh;
+    display: block;
+  }
+  .phone-scanner-height{
+    height:39vh !important;
+  }
+  .right-components{
+    float:right; 
+    clear:both;
+    margin:20px -100px;
+    position: absolute;
+    right:50px; 
+    top:18px;
   }
 
 }
@@ -412,6 +443,7 @@
   background:black ;
   opacity:.7; 
   z-index:500;
+  top:0;
 }
 
 .modal-close-btn{
